@@ -1,0 +1,3368 @@
+{
+"wad" "halflife.wad;"
+"mapversion" "220"
+"sounds" "1"
+"MaxRange" "6096"
+"classname" "worldspawn"
+}
+///////////////////////// START RIPENT /////////////////////////
+{
+"origin" "-2253 2161 -84"
+"vp_type" "1"
+"angles" "0 0 0"
+"targetname" "w.useme1"
+"scale" "0.15"
+"renderamt" "255"
+"rendermode" "4"
+"renderfx" "9"
+"framerate" "10.0"
+"rendercolor" "0 0 0"
+"model" "sprites/adamr/pointers/pointer-use.spr"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"classname" "trigger_camera"
+"hud_weapons" "1"
+"hud_flashlight" "1"
+"hud_health" "1"
+"spawnflags" "332"
+"wait" "5"
+"angles" "0 153 0"
+"target" "w.camera1.t"
+"targetname" "exit1"
+"origin" "-2243 1887 -28"
+}
+{
+"classname" "info_target"
+"targetname" "w.camera1.t"
+"origin" "-1904 2065 -92"
+}
+{
+"classname" "trigger_camera"
+"hud_weapons" "1"
+"hud_flashlight" "1"
+"hud_health" "1"
+"spawnflags" "332"
+"wait" "5"
+"angles" "0 153 0"
+"target" "w.camera2.t"
+"targetname" "exit2"
+"origin" "1645 2012 -92"
+}
+{
+"classname" "info_target"
+"targetname" "w.camera2.t"
+"origin" "2113 2181 -92"
+}
+{
+"classname" "trigger_camera"
+"hud_weapons" "1"
+"hud_flashlight" "1"
+"hud_health" "1"
+"spawnflags" "332"
+"wait" "5"
+"angles" "0 153 0"
+"target" "w.camera3.t"
+"targetname" "you_shall_pass"
+"origin" "461 -1020 -1125"
+}
+{
+"classname" "info_target"
+"targetname" "w.camera3.t"
+"origin" "451 -1588 -1308"
+}
+{
+"origin" "-1644 1963 -77"
+"angles" "0 180 0"
+"model" "sprites/tc/wrongway.spr"
+"vp_type" "4"
+"scale" ".4"
+"framerate" "5"
+"rendermode" "2"
+"renderamt" "150"
+"classname" "env_sprite"
+}
+{
+"origin" "2459 2170 -77"
+"angles" "0 180 0"
+"model" "sprites/tc/wrongway.spr"
+"vp_type" "4"
+"scale" ".4"
+"framerate" "5"
+"rendermode" "2"
+"renderamt" "150"
+"classname" "env_sprite"
+}
+{
+"origin" "-2018 1975 32"
+"targetname" "exit1"
+"scale" ".4"
+"framerate" "5"
+"vp_type" "4"
+"angles" "0 0 270"
+"renderamt" "255"
+"rendermode" "5"
+"rendercolor" "0 0 0"
+"model" "sprites/tc/babyarrows.spr"
+"classname" "env_sprite"
+}
+/////////////////////////  END RIPENT  /////////////////////////
+{
+"model" "*1"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*2"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*3"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*4"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*5"
+"skin" "-1"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "-2528 2176 -90"
+"targetname" "tomb"
+"classname" "info_null"
+}
+{
+"origin" "-2032 2176 128"
+"_fade" "1.0"
+"target" "tomb"
+"_light" "171 241 254 200"
+"_cone2" "80"
+"_cone" "50"
+"angles" "0 180 0"
+"classname" "light_spot"
+}
+{
+"model" "*6"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*7"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*8"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*9"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*10"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*11"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*12"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*13"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "-2028 2176 128"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "2"
+"model" "sprites/glow01.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"model" "*14"
+"damagetype" "32"
+"dmg" "200"
+"classname" "trigger_hurt"
+}
+{
+"model" "*15"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*16"
+"skin" "-1"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "-452 2176 624"
+"_fade" "1.0"
+"target" "tomb2"
+"_light" "171 241 254 200"
+"_cone2" "80"
+"_cone" "50"
+"angles" "0 0 0"
+"classname" "light_spot"
+}
+{
+"origin" "-448 2176 624"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "2"
+"model" "sprites/glow01.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"origin" "-1656 2176 132"
+"targetname" "tomb2"
+"classname" "info_null"
+}
+{
+"origin" "-1344 2912 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-704 2912 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "512 2912 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-128 2912 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "1280 2912 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "1280 1472 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "512 1472 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-128 1472 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-704 1472 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-1344 1472 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "1280 2176 256"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "90"
+"_cone" "60"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "512 2176 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-128 2176 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-704 2176 216"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"origin" "-1344 2176 216"
+"_fade" "1.0"
+"_light" "171 241 254 200"
+"pitch" "-90"
+"_cone2" "100"
+"_cone" "70"
+"angles" "0 0 0"
+"classname" "light_spot"
+}
+{
+"origin" "1920 2176 48"
+"_fade" "1.0"
+"pitch" "-90"
+"_cone2" "90"
+"_cone" "60"
+"angles" "0 0 0"
+"_light" "171 241 254 200"
+"classname" "light_spot"
+}
+{
+"model" "*17"
+"targetname" "the_doors"
+"material" "1"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*18"
+"speed" "800"
+"style" "32"
+"angles" "0 90 0"
+"classname" "trigger_push"
+}
+{
+"model" "*19"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*20"
+"damagetype" "32"
+"dmg" "200"
+"classname" "trigger_hurt"
+}
+{
+"model" "*21"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*22"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*23"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*24"
+"speed" "800"
+"style" "32"
+"angles" "0 270 0"
+"classname" "trigger_push"
+}
+{
+"model" "*25"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*26"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*27"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*28"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*29"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*30"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*31"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*32"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "2992 2336 0"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "3376 1696 48"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "2864 160 96"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "3168 -624 -80"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "2624 -64 -1728"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "2688 -336 -512"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "448 168 -1272"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "448 -504 -1152"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "448 -2080 -1664"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "448 -1288 -1152"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "264 -2744 -1144"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"model" "*33"
+"damagetype" "32"
+"dmg" "200"
+"classname" "trigger_hurt"
+}
+{
+"model" "*34"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "6"
+"classname" "func_breakable"
+}
+{
+"origin" "2625 -66 -1704"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"origin" "2776 -336 -1928"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "2752 -328 -1952"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"model" "*35"
+"damagetype" "32"
+"dmg" "200"
+"classname" "trigger_hurt"
+}
+{
+"origin" "352 272 -1248"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"origin" "544 272 -1248"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"model" "*36"
+"speed" "800"
+"style" "32"
+"angles" "0 270 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2700 1644 68"
+"targetname" "tomb_spawns"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*37"
+"speed" "800"
+"style" "32"
+"angles" "0 90 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2508 1644 68"
+"targetname" "tomb_spawns"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*38"
+"speed" "800"
+"style" "32"
+"angles" "0 90 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2124 1644 68"
+"targetname" "tomb_spawns"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*39"
+"speed" "800"
+"style" "32"
+"angles" "0 90 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2892 1644 68"
+"targetname" "tomb_spawns"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-2892 2704 68"
+"targetname" "tomb_spawns"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-2700 2704 68"
+"targetname" "tomb_spawns"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*40"
+"speed" "800"
+"style" "32"
+"angles" "0 270 0"
+"classname" "trigger_push"
+}
+{
+"model" "*41"
+"speed" "800"
+"style" "32"
+"angles" "0 270 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2508 2704 68"
+"targetname" "tomb_spawns"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*42"
+"speed" "800"
+"style" "32"
+"angles" "0 270 0"
+"classname" "trigger_push"
+}
+{
+"origin" "-2124 2704 68"
+"targetname" "tomb_spawns"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*43"
+"wait" "-1"
+"speed" "100"
+"angles" "90 0 0"
+"targetname" "exit1"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "512"
+"classname" "func_door"
+}
+{
+"model" "*44"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "-3632 2177 -128"
+"model" "models/moria/cave_troll.mdl"
+"TriggerTarget" "exit1"
+"health" "1000"
+"displayname" "Cave Troll"
+"TriggerCondition" "4"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "monster_gonome"
+}
+{
+"model" "*45"
+"speed" "800"
+"angles" "0 0 0"
+"classname" "trigger_push"
+}
+{
+"model" "*46"
+"material" "8"
+"health" "1"
+"targetname" "troll_door"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*47"
+"target" "tomb_message"
+"classname" "trigger_once"
+}
+{
+"origin" "-2608 2224 -48"
+"troll_have" "118"
+"troll_door" "120"
+"the_doors" "15"
+"tomb_mes3" "11"
+"tomb_mes2" "7"
+"tomb_mes1" "1"
+"targetname" "tomb_sequence"
+"classname" "multi_manager"
+}
+{
+"origin" "-2528 2176 -98"
+"wpn_p_model" "models/moria/p_nm_axe.mdl"
+"wpn_w_model" "models/moria/w_nm_axe.mdl"
+"wpn_v_model" "models/moria/v_nm_axe.mdl"
+"angles" "0 0 0"
+"classname" "weapon_pipewrench"
+}
+{
+"model" "*48"
+"wait" "-1"
+"speed" "100"
+"angles" "90 0 0"
+"targetname" "exit2"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "512"
+"classname" "func_door"
+}
+{
+"origin" "-2368 2176 0"
+"angles" "0 0 0"
+"classname" "info_player_start"
+}
+{
+"origin" "-3424 2207 -96"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "20"
+"angles" "0 0 0"
+"spawnflags" "1"
+"classname" "squadmaker"
+}
+{
+"origin" "-3424 2144 -96"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "20"
+"angles" "0 0 0"
+"spawnflags" "1"
+"classname" "squadmaker"
+}
+{
+"origin" "-2892 2528 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2700 2528 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2508 2528 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2124 2528 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2124 1824 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2508 1824 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2700 1824 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2892 1824 -64"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "-2975 2172 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2736 2177 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2724 2365 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2721 1978 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2521 1993 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2328 1987 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2360 2186 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2379 2309 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2536 2315 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2161 1981 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2260 2379 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2210 2240 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2130 2173 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2209 2104 -128"
+"classname" "info_node"
+}
+{
+"origin" "-2560 1920 -16"
+"message" "A Shadow moves in the dark. We cannot get out."
+"targetname" "tomb_mes2"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".75"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "-2528 1920 -16"
+"message" "Drums, drums in the deep. We cannot get out."
+"targetname" "tomb_mes1"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "-2496 1920 -16"
+"message" "Here lies Balin, son of Fundin, Lord of Moria"
+"targetname" "tomb_message"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".6"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "-2592 1920 -16"
+"message" "They are coming."
+"targetname" "tomb_mes3"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "4"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".8"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "-2624 1920 -16"
+"message" "To the bridge of Khazad-dum!"
+"targetname" "exit1"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"model" "*49"
+"target" "tomb_sequence"
+"killtarget" "w.useme1"
+"wait" "-1"
+"speed" "5"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_button"
+}
+{
+"origin" "-2656 1920 -16"
+"message" "They have a Cave Troll"
+"targetname" "troll_have"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "-1840 2128 -128"
+"wpn_p_model" "models/moria/p_nm_crossbow.mdl"
+"wpn_w_model" "models/moria/w_nm_crossbow.mdl"
+"wpn_v_model" "models/moria/v_nm_crossbow.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crossbow"
+}
+{
+"origin" "3744 -224 -16"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 180 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "3744 -16 -16"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 180 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "3424 -960 -224"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 90 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "3664 -944 -224"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 90 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "3224 -960 -208"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 90 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"model" "*50"
+"target" "spawns_up1"
+"delay" "1"
+"classname" "trigger_once"
+}
+{
+"origin" "2720 608 -64"
+"hall_monsters" "4"
+"stairs_spawns" "3"
+"tomb_spawns" "2"
+"targetname" "spawns_up1"
+"classname" "multi_manager"
+}
+{
+"origin" "2909 2139 -60"
+"targetname" "stairs_spawns"
+"angles" "0 270 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2817 2251 -60"
+"targetname" "stairs_spawns"
+"angles" "0 270 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2704 2362 -60"
+"targetname" "stairs_spawns"
+"angles" "0 270 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2561 2393 -60"
+"targetname" "stairs_spawns"
+"angles" "0 270 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "3062 1959 -60"
+"targetname" "stairs_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "3124 1843 -26"
+"targetname" "stairs_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "3117 1728 -12"
+"targetname" "stairs_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "3139 1534 -60"
+"targetname" "stairs_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*51"
+"target" "great_hall_sequence"
+"delay" "1"
+"classname" "trigger_once"
+}
+{
+"origin" "-512 2432 256"
+"hall_shake" "1"
+"hall_boss" "200"
+"hall_monsters" "2"
+"targetname" "great_hall_sequence"
+"classname" "multi_manager"
+}
+{
+"origin" "-896 1088 16"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-896 3263 16"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "2032 2176 -80"
+"exit2_balrogstuff" "4"
+"exit2_mes2" "22"
+"exit2_mes1" "15"
+"exit2" "26"
+"targetname" "exit2_thing"
+"classname" "multi_manager"
+}
+{
+"origin" "2032 2208 -80"
+"targetname" "exit2_mes1"
+"message" "What is this new devilry?"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "2032 2144 -80"
+"targetname" "exit2_mes2"
+"message" "A Balrog. A demon of the ancient world. This foe is beyond any of you. Run!"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "5"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "1872 2400 -64"
+"targetname" "bal_shake1"
+"frequency" "6"
+"duration" "3"
+"radius" "500"
+"amplitude" "2"
+"spawnflags" "1"
+"classname" "env_shake"
+}
+{
+"origin" "1904 2400 -64"
+"sound3" "7"
+"sound2" "4"
+"sound1" "1.5"
+"balrog_break6" "8"
+"balrog_break5" "7"
+"balrog_break4" "6"
+"balrog_break3" "4"
+"balrog_break2" "3"
+"balrog_break1" "2"
+"bal_shake2" "5"
+"bal_shake1" "1"
+"targetname" "exit2_balrogstuff"
+"classname" "multi_manager"
+}
+{
+"origin" "1872 2400 -32"
+"targetname" "bal_shake2"
+"frequency" "3"
+"duration" "3"
+"radius" "500"
+"amplitude" "6"
+"spawnflags" "1"
+"classname" "env_shake"
+}
+{
+"model" "*52"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break1"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*53"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break2"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*54"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break3"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*55"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break4"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*56"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break5"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*57"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break6"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"origin" "1792 2176 -96"
+"new_model" "models/moria/orc_boss.mdl"
+"trigger_target" "exit2_thing"
+"trigger_condition" "4"
+"targetname" "hall_boss"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Boss"
+"new_body" "-1"
+"monstertype" "monster_alien_grunt"
+"health" "2000"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 180 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-833 3275 -128"
+"classname" "info_node"
+}
+{
+"origin" "-721 2853 -128"
+"classname" "info_node"
+}
+{
+"origin" "-737 2169 -128"
+"classname" "info_node"
+}
+{
+"origin" "-741 1412 -128"
+"classname" "info_node"
+}
+{
+"origin" "-1343 1419 -128"
+"classname" "info_node"
+}
+{
+"origin" "-1354 2183 -128"
+"classname" "info_node"
+}
+{
+"origin" "-1364 2976 -128"
+"classname" "info_node"
+}
+{
+"origin" "-103 2933 -128"
+"classname" "info_node"
+}
+{
+"origin" "-86 2142 -128"
+"classname" "info_node"
+}
+{
+"origin" "-128 1421 -128"
+"classname" "info_node"
+}
+{
+"origin" "521 1346 -128"
+"classname" "info_node"
+}
+{
+"origin" "612 2217 -128"
+"classname" "info_node"
+}
+{
+"origin" "546 2916 -128"
+"classname" "info_node"
+}
+{
+"origin" "1214 2977 -128"
+"classname" "info_node"
+}
+{
+"origin" "1329 2189 -128"
+"classname" "info_node"
+}
+{
+"origin" "1134 1379 -128"
+"classname" "info_node"
+}
+{
+"origin" "1760 2176 -128"
+"classname" "info_node"
+}
+{
+"origin" "-856 1149 -128"
+"classname" "info_node"
+}
+{
+"origin" "2816 448 56"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "1992 -72 -952"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"model" "*58"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "2120 432 -120"
+"_fade" "1.0"
+"_light" "208 163 4 200"
+"classname" "light"
+}
+{
+"origin" "2256 296 -1884"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "448 -2080 -1024"
+"_fade" "1.0"
+"_light" "255 255 128 200"
+"classname" "light"
+}
+{
+"origin" "2668 1580 -120"
+"wpn_p_model" "models/moria/p_nm_axe.mdl"
+"wpn_w_model" "models/moria/w_nm_axe.mdl"
+"wpn_v_model" "models/moria/v_nm_axe.mdl"
+"angles" "0 0 0"
+"classname" "weapon_pipewrench"
+}
+{
+"origin" "2668 1640 -120"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "2668 1704 -120"
+"wpn_p_model" "models/moria/p_nm_crossbow.mdl"
+"wpn_w_model" "models/moria/w_nm_crossbow.mdl"
+"wpn_v_model" "models/moria/v_nm_crossbow.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crossbow"
+}
+{
+"origin" "448 496 -1152"
+"new_model" "models/svencooprpg2/hydra.mdl"
+"trigger_target" "balrog_death"
+"trigger_condition" "4"
+"targetname" "balrog_spawn"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Balrog"
+"new_body" "-1"
+"monstertype" "monster_babygarg"
+"health" "4000"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"model" "*59"
+"delay" "2"
+"target" "balrog_spawn"
+"classname" "trigger_once"
+}
+{
+"model" "*60"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "you_shall_pass"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"origin" "140 -1460 -1324"
+"targetname" "you_shall_pass"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"origin" "332 -1460 -1324"
+"targetname" "you_shall_pass"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"origin" "572 -1460 -1324"
+"targetname" "you_shall_pass"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"origin" "764 -1460 -1324"
+"targetname" "you_shall_pass"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"style" "32"
+"origin" "240 -1536 -1272"
+"_fade" "1.0"
+"targetname" "you_shall_pass"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"style" "32"
+"origin" "656 -1536 -1272"
+"_fade" "1.0"
+"targetname" "you_shall_pass"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "656 -1512 -1272"
+"last_badguys" "7"
+"you_shall_pass" "6"
+"fly_you_fool" "2"
+"targetname" "balrog_death"
+"classname" "multi_manager"
+}
+{
+"origin" "368 496 -1152"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "528 496 -1152"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"model" "*61"
+"target" "the_end"
+"classname" "trigger_once"
+}
+{
+"origin" "8 -3000 -1063"
+"targetname" "gameend"
+"classname" "game_end"
+}
+{
+"origin" "8 -3046 -1080"
+"holdtime" "10"
+"targetname" "fade"
+"rendercolor" "0 0 0"
+"renderamt" "255"
+"duration" "4"
+"classname" "env_fade"
+}
+{
+"origin" "8 -3095 -1070"
+"message" "The fellowship has escaped!"
+"targetname" "endmes"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "4"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".8"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "8 -3141 -1058"
+"gameend" "5"
+"fade" "3"
+"endmes" "2"
+"targetname" "the_end"
+"classname" "multi_manager"
+}
+{
+"origin" "704 -1520 -1248"
+"message" "Over the bridge! Fly!"
+"targetname" "fly_you_fool"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "3"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "240 110 0"
+"color" "100 100 100"
+"y" ".7"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "3768 -34 -48"
+"classname" "info_node"
+}
+{
+"origin" "3777 -274 -48"
+"classname" "info_node"
+}
+{
+"origin" "3678 -1020 -256"
+"classname" "info_node"
+}
+{
+"origin" "3410 -1039 -256"
+"classname" "info_node"
+}
+{
+"origin" "3224 -1040 -256"
+"classname" "info_node"
+}
+{
+"origin" "3222 -1294 -256"
+"classname" "info_node"
+}
+{
+"origin" "2601 -296 -2012"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"origin" "2600 -296 -2036"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"model" "*62"
+"target" "stairs_bowmen"
+"delay" "1"
+"classname" "trigger_once"
+}
+{
+"origin" "2776 376 -2140"
+"_fade" "1.0"
+"_light" "211 44 1 200"
+"classname" "light"
+}
+{
+"origin" "2777 376 -2116"
+"renderamt" "150"
+"rendermode" "5"
+"scale" "1"
+"model" "sprites/flame2.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "env_sprite"
+}
+{
+"model" "*63"
+"skin" "-1"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"origin" "2668 1748 -120"
+"angles" "0 0 0"
+"m_flCustomRespawnTime" "5"
+"classname" "ammo_crossbow"
+}
+{
+"origin" "2668 1748 -120"
+"angles" "0 0 0"
+"m_flCustomRespawnTime" "5"
+"classname" "ammo_crossbow"
+}
+{
+"origin" "3136 -1056 -208"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 180 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "336 -1488 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "560 -1488 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "1376 -360 -464"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 0 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "1376 -464 -464"
+"targetname" "stairs_bowmen"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "30"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 0 0"
+"spawnflags" "8"
+"classname" "squadmaker"
+}
+{
+"origin" "1368 -465 -512"
+"classname" "info_node"
+}
+{
+"origin" "1368 -352 -512"
+"classname" "info_node"
+}
+{
+"origin" "1992 44 -1336"
+"classname" "info_node"
+}
+{
+"origin" "1985 -272 -1336"
+"classname" "info_node"
+}
+{
+"origin" "1905 -118 -1336"
+"classname" "info_node"
+}
+{
+"origin" "1576 -101 -1297"
+"classname" "info_node"
+}
+{
+"origin" "1291 -101 -1344"
+"classname" "info_node"
+}
+{
+"origin" "441 102 -1344"
+"classname" "info_node"
+}
+{
+"origin" "439 -129 -1344"
+"classname" "info_node"
+}
+{
+"origin" "124 -109 -1344"
+"classname" "info_node"
+}
+{
+"origin" "797 -120 -1344"
+"classname" "info_node"
+}
+{
+"origin" "422 -497 -1344"
+"classname" "info_node"
+}
+{
+"origin" "783 -512 -1344"
+"classname" "info_node"
+}
+{
+"origin" "91 -497 -1344"
+"classname" "info_node"
+}
+{
+"origin" "801 -928 -1344"
+"classname" "info_node"
+}
+{
+"origin" "422 -899 -1344"
+"classname" "info_node"
+}
+{
+"origin" "76 -916 -1344"
+"classname" "info_node"
+}
+{
+"origin" "798 -1270 -1344"
+"classname" "info_node"
+}
+{
+"origin" "432 -1314 -1344"
+"classname" "info_node"
+}
+{
+"origin" "56 -1289 -1344"
+"classname" "info_node"
+}
+{
+"origin" "1216 -64 -1344"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "monster_zombie"
+}
+{
+"origin" "1216 -160 -1344"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "monster_zombie"
+}
+{
+"origin" "1896 -240 -1336"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "monster_zombie"
+}
+{
+"origin" "1896 48 -1336"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "monster_zombie"
+}
+{
+"origin" "1816 -104 -1320"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "monster_zombie"
+}
+{
+"model" "*64"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break6"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*65"
+"renderamt" "255"
+"rendermode" "4"
+"targetname" "balrog_break6"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"origin" "2928 1888 -128"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "monster_zombie"
+}
+{
+"origin" "2864 2064 -128"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "monster_zombie"
+}
+{
+"origin" "2472 1968 -128"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "monster_zombie"
+}
+{
+"origin" "2472 2384 -128"
+"model" "models/moria/orc.mdl"
+"health" "60"
+"displayname" "Orc"
+"maxhullsize" "0 0 0"
+"minhullsize" "0 0 0"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "monster_zombie"
+}
+{
+"origin" "2192 16 -1044"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2192 -64 -1012"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2192 -144 -968"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2160 96 -1092"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2128 -72 -1156"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2128 8 -1116"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2128 -144 -1184"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2128 -224 -1224"
+"targetname" "bottom_spawns"
+"angles" "0 180 0"
+"spawnflags" "2"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "1312 -8 -1232"
+"port1" "10"
+"sbreak_sequence" "5"
+"last_doors" "14"
+"stairs_bowmen" "4"
+"bottom_spawns" "3"
+"stairs_spawns" "2"
+"targetname" "stairs_complete"
+"classname" "multi_manager"
+}
+{
+"model" "*66"
+"wait" "-1"
+"speed" "100"
+"angles" "90 0 0"
+"targetname" "last_doors"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "512"
+"classname" "func_door"
+}
+{
+"origin" "1312 32 -1232"
+"stair_shake" "3.25"
+"stair_camera2" "5"
+"stair_camera1" "1"
+"rock_fall" "3"
+"targetname" "sbreak_sequence"
+"classname" "multi_manager"
+}
+{
+"origin" "3328 -448 -392"
+"angles" "0 120 0"
+"target" "cam1_tar"
+"targetname" "stair_camera1"
+"deceleration" "500"
+"acceleration" "500"
+"wait" "5"
+"spawnflags" "12"
+"classname" "trigger_camera"
+}
+{
+"model" "*67"
+"target" "1"
+"volume" "0.85"
+"speed" "325"
+"targetname" "rock_fall"
+"rendercolor" "0 0 0"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "2688 104 584"
+"target" "2"
+"targetname" "1"
+"angles" "0 0 0"
+"classname" "path_corner"
+}
+{
+"origin" "2688 104 520"
+"target" "3"
+"targetname" "2"
+"angles" "0 0 0"
+"classname" "path_corner"
+}
+{
+"origin" "2688 104 -624"
+"message" "stair_chunk"
+"target" "4"
+"targetname" "3"
+"angles" "0 0 0"
+"classname" "path_corner"
+}
+{
+"model" "*68"
+"target" "stair_tipover"
+"material" "8"
+"health" "600"
+"targetname" "stair_chunk"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*69"
+"origin" "2720 -64 -1600"
+"targetname" "stair_tipover"
+"distance" "90"
+"dmg" "100"
+"wait" "-1"
+"speed" "14"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "144"
+"classname" "func_door_rotating"
+}
+{
+"origin" "2688 104 128"
+"targetname" "cam1_tar"
+"classname" "info_target"
+}
+{
+"origin" "2840 -56 -360"
+"targetname" "cam2_tar"
+"classname" "info_target"
+}
+{
+"origin" "3008 -320 376"
+"angles" "0 120 0"
+"target" "cam2_tar"
+"targetname" "stair_camera2"
+"deceleration" "500"
+"acceleration" "500"
+"wait" "10"
+"spawnflags" "12"
+"classname" "trigger_camera"
+}
+{
+"origin" "1312 64 -1232"
+"targetname" "stair_shake"
+"frequency" "4"
+"duration" "6"
+"radius" "500"
+"amplitude" "6"
+"spawnflags" "1"
+"classname" "env_shake"
+}
+{
+"origin" "1952 -188 -1336"
+"wpn_p_model" "models/moria/p_nm_axe.mdl"
+"wpn_w_model" "models/moria/w_nm_axe.mdl"
+"wpn_v_model" "models/moria/v_nm_axe.mdl"
+"angles" "0 0 0"
+"classname" "weapon_pipewrench"
+}
+{
+"origin" "1952 -128 -1336"
+"wpn_p_model" "models/moria/p_nm_sword.mdl"
+"wpn_w_model" "models/moria/w_nm_sword.mdl"
+"wpn_v_model" "models/moria/v_nm_sword.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crowbar"
+}
+{
+"origin" "1952 -64 -1336"
+"wpn_p_model" "models/moria/p_nm_crossbow.mdl"
+"wpn_w_model" "models/moria/w_nm_crossbow.mdl"
+"wpn_v_model" "models/moria/v_nm_crossbow.mdl"
+"angles" "0 0 0"
+"classname" "weapon_crossbow"
+}
+{
+"origin" "2688 104 -2488"
+"targetname" "4"
+"angles" "0 0 0"
+"classname" "path_corner"
+}
+{
+"origin" "1984 -104 -1152"
+"targetname" "to_bottom"
+"angles" "0 180 0"
+"classname" "info_teleport_destination"
+}
+{
+"model" "*70"
+"targetname" "port1"
+"material" "8"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*71"
+"target" "to_bottom"
+"classname" "trigger_teleport"
+}
+{
+"origin" "1184 -112 -1312"
+"trigger_target" "stairs_complete"
+"trigger_condition" "4"
+"targetname" "stair_boss"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Stairs Boss"
+"new_body" "-1"
+"monstertype" "monster_alien_grunt"
+"health" "500"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"model" "*72"
+"target" "stair_boss"
+"classname" "trigger_once"
+}
+{
+"origin" "448 -2768 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "8"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "471 -2741 -1360"
+"classname" "info_node"
+}
+{
+"origin" "460 -2543 -1355"
+"classname" "info_node"
+}
+{
+"origin" "632 -2682 -1360"
+"classname" "info_node"
+}
+{
+"origin" "280 -2691 -1360"
+"classname" "info_node"
+}
+{
+"origin" "455 -2879 -1360"
+"classname" "info_node"
+}
+{
+"origin" "190 -2879 -1227"
+"classname" "info_node"
+}
+{
+"origin" "66 -2894 -1184"
+"classname" "info_node"
+}
+{
+"origin" "450 -2085 -1304"
+"classname" "info_node"
+}
+{
+"origin" "448 -1539 -1352"
+"classname" "info_node"
+}
+{
+"origin" "144 -400 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "752 -400 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 180 0"
+"classname" "squadmaker"
+}
+{
+"origin" "752 -784 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 180 0"
+"classname" "squadmaker"
+}
+{
+"origin" "144 -784 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "-1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "448 3264 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "448 1089 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "48 1824 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "48 2528 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "1040 1824 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "1040 2528 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-512 2432 128"
+"targetname" "hall_shake"
+"frequency" "2"
+"duration" "4"
+"radius" "500"
+"amplitude" "4"
+"spawnflags" "1"
+"classname" "env_shake"
+}
+{
+"origin" "-3360 2208 -96"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "18"
+"angles" "0 0 0"
+"spawnflags" "1"
+"classname" "squadmaker"
+}
+{
+"origin" "64 2400 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "176 2400 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "288 2400 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "288 1968 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "64 1968 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "176 1968 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "416 2352 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "416 2256 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "416 2032 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "416 2128 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-48 2352 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-48 2256 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-48 2128 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-48 2032 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "1"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "704 2528 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Scout"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "40"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "4"
+"angles" "0 180 0"
+"classname" "squadmaker"
+}
+{
+"origin" "704 1824 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Scout"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "40"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "4"
+"angles" "0 180 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-880 2528 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Scout"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "40"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "4"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-880 1824 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Scout"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "40"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "4"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-1504 1089 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-1504 3264 -80"
+"targetname" "hall_monsters"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 0 0"
+"classname" "squadmaker"
+}
+{
+"origin" "-3280 2176 -96"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Scout"
+"new_body" "-1"
+"monstertype" "monster_pitdrone"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "10"
+"angles" "0 0 0"
+"spawnflags" "1"
+"classname" "squadmaker"
+}
+{
+"origin" "-3360 2144 -96"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "1"
+"monstercount" "18"
+"angles" "0 0 0"
+"spawnflags" "1"
+"classname" "squadmaker"
+}
+{
+"origin" "592 -2688 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "320 -2688 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"minhullsize" "0 0 0"
+"displayname" "Orc Archer"
+"new_body" "-1"
+"monstertype" "monster_shocktrooper"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "10"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "336 -1376 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "14"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "560 -1376 -1312"
+"targetname" "last_badguys"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "14"
+"angles" "0 90 0"
+"classname" "squadmaker"
+}
+{
+"origin" "368 432 -1152"
+"targetname" "balrog_spawn"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "6"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "528 432 -1152"
+"targetname" "balrog_spawn"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"gag" "-1"
+"notsolid" "-1"
+"rendercolor" "0 0 0"
+"new_model" "models/moria/orc.mdl"
+"minhullsize" "0 0 0"
+"displayname" "Orc"
+"new_body" "-1"
+"monstertype" "monster_zombie"
+"health" "60"
+"m_imaxlivechildren" "1"
+"delay" "2"
+"monstercount" "6"
+"angles" "0 270 0"
+"classname" "squadmaker"
+}
+{
+"origin" "1864 2392 8"
+"message" "garg/gar_alert1.wav"
+"targetname" "sound1"
+"pitchstart" "100"
+"pitch" "100"
+"health" "10"
+"spawnflags" "33"
+"classname" "ambient_generic"
+}
+{
+"origin" "1896 2392 8"
+"message" "garg/gar_alert2.wav"
+"targetname" "sound2"
+"pitchstart" "100"
+"pitch" "100"
+"health" "10"
+"spawnflags" "33"
+"classname" "ambient_generic"
+}
+{
+"origin" "1928 2392 8"
+"message" "garg/gar_alert3.wav"
+"targetname" "sound3"
+"pitchstart" "100"
+"pitch" "100"
+"health" "10"
+"spawnflags" "33"
+"classname" "ambient_generic"
+}
+ 
