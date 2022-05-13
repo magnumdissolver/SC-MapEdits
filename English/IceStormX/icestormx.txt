@@ -4935,7 +4935,7 @@
 }
 {
 "origin" "-47 759 -25"
-"message" "Mapa creado por Ben Finn (Fortune)"
+"message" "Map created by Ben Finn (Fortune)"
 "targetname" "ices_drs6text22z"
 "channel" "1"
 "fxtime" "0.25"
