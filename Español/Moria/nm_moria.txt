@@ -1,7 +1,6 @@
 {
 "wad" "halflife.wad;"
 "mapversion" "220"
-"sounds" "1"
 "MaxRange" "6096"
 "classname" "worldspawn"
 }

@@ -86,6 +86,39 @@
 "target" "w.longjump"
 "classname" "item_security"
 }
+{
+"origin" "0 0 0"
+"message" "Mapa creado por crash"
+"channel" "2"
+"fxtime" "0.25"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "238 97 2"
+"color" "255 255 255"
+"y" ".7"
+"x" "-1"
+"holdtime" "4"
+"targetname" "w.endtext"
+"spawnflags" "1"
+"classname" "game_text"
+}
+{
+"origin" "0 0 0"
+"w.endgame" "10"
+"w.endfade" "0"
+"w.endtext" "5"
+"targetname" "w.endsequence"
+"classname" "multi_manager"
+}
+{
+"origin" "0 0 0"
+"rendercolor" "0 0 0"
+"renderamt" "255"
+"duration" "3"
+"holdtime" "30"
+"targetname" "w.endfade"
+"classname" "env_fade"
+}
 /////////////////////////  END RIPENT  /////////////////////////
 {
 "origin" "-2256 2864 2208"
@@ -1033,14 +1066,14 @@
 }
 {
 "origin" "-1659 2872 2345"
-"targetname" "end_game"
+"targetname" "w.endgame"
 "classname" "game_end"
 }
 {
 "model" "*15"
 "delay" "0"
 "sounds" "0"
-"target" "end_game"
+"target" "w.endsequence"
 "classname" "trigger_once"
 }
 {
@@ -1064,6 +1097,7 @@
 "delay" "0"
 "sounds" "0"
 "targetname" "lj_teleball"
+"teleport_start_inactive" "1"
 "target" "lj_tele"
 "classname" "trigger_teleport"
 }
@@ -1935,6 +1969,7 @@
 "delay" "0"
 "sounds" "0"
 "targetname" "lj_teleball"
+"teleport_start_inactive" "1"
 "target" "lj_tele"
 "classname" "trigger_teleport"
 }

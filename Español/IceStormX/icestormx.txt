@@ -1,6 +1,5 @@
 {
 "wad" "\sierra\half-life\valve\halflife.wad;\program files\steam\steamapps\elitevamp@hotmail.com\half-life\svencoop\svencoop1.wad;\program files\steam\steamapps\elitevamp@hotmail.com\half-life\svencoop\decals.wad;"
-"mapversion" "220"
 "sounds" "1"
 "WaveHeight" "3.2"
 "mapversion" "220"
@@ -8,9 +7,14 @@
 "MaxRange" "5750"
 "skyname" "office"
 "classname" "worldspawn"
-"classname" "worldspawn"
 }
 ///////////////////////// START RIPENT /////////////////////////
+{
+"origin" "0 0 0"
+"spawnflags" "2"
+"targetname" "w.respawn"
+"classname" "trigger_respawn"
+}
 {
 "origin" "1663 1391 -376"
 "angles" "0 20 0"
@@ -4649,6 +4653,7 @@
 "endgamemm22" "15"
 "spawn3" "15"
 "spawn4" "15"
+"w.respawn" "16.5"
 "w.angels1" "17"
 "w.arrow1" "15#2"
 "w.arrow2" "15#2"
@@ -4856,10 +4861,9 @@
 {
 "origin" "-48 701 -30"
 "camrgetzz" "3"
-"ices_drs6textz" "50"
-"ices_drs6text22z" "20"
+"ices_drs6text22z" "5"
 "scene_fail_zgt" "4"
-"scene_fail_zge" "80"
+"scene_fail_zge" "10"
 "targetname" "scene_fail_z"
 "classname" "multi_manager"
 }
@@ -4930,24 +4934,8 @@
 "classname" "trigger_once"
 }
 {
-"origin" "-13 758 -23"
-"message" "El juego termina en 30 segundos."
-"targetname" "ices_drs6textz"
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "8"
-"fadeout" "1"
-"fadein" "1.5"
-"color2" "199 41 41"
-"color" "255 255 255"
-"y" ".75"
-"x" "-1"
-"spawnflags" "1"
-"classname" "game_text"
-}
-{
 "origin" "-47 759 -25"
-"message" "El juego termina en 60 segundos."
+"message" "Mapa creado por Ben Finn (Fortune)"
 "targetname" "ices_drs6text22z"
 "channel" "1"
 "fxtime" "0.25"

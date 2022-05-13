@@ -1,10 +1,8 @@
 {
 "wad" "\sierra\half-life\valve\halflife.wad;\sierra\half-life\valve\decals.wad;\sierra\half-life\valve\xeno.wad;"
 "mapversion" "220"
-"sounds" "1"
 "startdark" "1"
 "skyname" "night"
-"classname" "worldspawn"
 "MaxRange" "9900"
 "classname" "worldspawn"
 }

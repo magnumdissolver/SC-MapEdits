@@ -2,7 +2,6 @@
 "wad" "\program\steam\steamapps\arvid87\half-life\svencoop\auspices.wad;\sierra\half-life\valve\halflife.wad;\sierra\half-life\valve\liquids.wad;\sierra\half-life\valve\cached.wad;\sierra\half-life\valve\fonts.wad;\sierra\half-life\valve\gfx.wad;\sierra\half-life\valve\xeno.wad;\sierra\half-life\valve\spraypaint.wad;"
 "mapversion" "220"
 "scversion" "401"
-"sounds" "1"
 "classname" "worldspawn"
 "skyname" "dusk"
 "MaxRange" "6096"

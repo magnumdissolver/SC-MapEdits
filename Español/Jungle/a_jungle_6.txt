@@ -1,0 +1,2001 @@
+{
+"wad" "halflife.wad;xeno.wad;decals.wad;junglewad1.wad;hlrally_summer.wad;leprechaun.wad;projectguilty3.wad;"
+"mapversion" "220"
+"MaxRange" "4096"
+"classname" "worldspawn"
+}
+///////////////////////// START RIPENT /////////////////////////
+{
+"origin" "0 0 0"
+"map" "a_jungle_7"
+"targetname" "w.nextmap"
+"spawnflags" "2"
+"classname" "trigger_changelevel"
+}
+{
+"origin" "0 0 0"
+"w.loading" ".001"
+"w.nextmap" "3"
+"targetname" "w.nextmap.mm"
+"classname" "multi_manager"
+}
+{
+"model" "*26"
+"target" "w.nextmap.mm"
+"classname" "trigger_once"
+}
+{
+"origin" "0 0 0"
+"message" "Cargando el siguiente nivel...\nQuedate con nosotros!"
+"targetname" "w.loading"
+"channel" "1"
+"fxtime" "0.25"
+"holdtime" "15"
+"fadeout" "0.5"
+"fadein" "1.5"
+"color2" "255 255 255"
+"color" "255 255 255"
+"y" "0.6"
+"x" "-1"
+"spawnflags" "1"
+"classname" "game_text"
+}
+/////////////////////////  END RIPENT  /////////////////////////
+{
+"model" "*1"
+"zhlt_lightflags" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*2"
+"WaveHeight" "3.2"
+"skin" "-5"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_1i"
+"targetname" "pulse1_1h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_3i"
+"targetname" "pulse1_3h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_2i"
+"targetname" "pulse1_2h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_6i"
+"targetname" "pulse1_6h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_7i"
+"targetname" "pulse1_7h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_5i"
+"targetname" "pulse1_5h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_4i"
+"targetname" "pulse1_4h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "27 -65 61"
+"angles" "0 0 0"
+"target" "pulse1_1h"
+"targetname" "pulse1_1g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 56"
+"angles" "0 0 0"
+"target" "pulse1_8i"
+"targetname" "pulse1_8h"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 539"
+"angles" "0 0 0"
+"target" "pulse1_8a"
+"targetname" "pulse1_8i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 337"
+"angles" "0 0 0"
+"speed" "800"
+"target" "pis_3"
+"targetname" "pis_4"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -65 233"
+"angles" "0 0 0"
+"speed" "250"
+"target" "pis_4"
+"targetname" "pis_3"
+"classname" "path_corner"
+}
+{
+"origin" "-25 -65 304"
+"angles" "0 0 0"
+"target" "pulse1_1e"
+"targetname" "pulse1_1d"
+"classname" "path_corner"
+}
+{
+"origin" "-25 -65 390"
+"angles" "0 0 0"
+"target" "pulse1_1d"
+"targetname" "pulse1_1c"
+"classname" "path_corner"
+}
+{
+"origin" "6 -65 438"
+"angles" "0 0 0"
+"target" "pulse1_1c"
+"targetname" "pulse1_1b"
+"classname" "path_corner"
+}
+{
+"origin" "6 -65 536"
+"angles" "0 0 0"
+"target" "pulse1_1b"
+"targetname" "pulse1_1a"
+"classname" "path_corner"
+}
+{
+"origin" "6 -65 255"
+"angles" "0 0 0"
+"target" "pulse1_1f"
+"targetname" "pulse1_1e"
+"classname" "path_corner"
+}
+{
+"origin" "6 -65 135"
+"angles" "0 0 0"
+"target" "pulse1_1g"
+"targetname" "pulse1_1f"
+"classname" "path_corner"
+}
+{
+"origin" "-65 28 64"
+"angles" "0 0 0"
+"target" "pulse1_3h"
+"targetname" "pulse1_3g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 7 135"
+"angles" "0 0 0"
+"target" "pulse1_3g"
+"targetname" "pulse1_3f"
+"classname" "path_corner"
+}
+{
+"origin" "-65 7 255"
+"angles" "0 0 0"
+"target" "pulse1_3f"
+"targetname" "pulse1_3e"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -24 304"
+"angles" "0 0 0"
+"target" "pulse1_3e"
+"targetname" "pulse1_3d"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -24 390"
+"angles" "0 0 0"
+"target" "pulse1_3d"
+"targetname" "pulse1_3c"
+"classname" "path_corner"
+}
+{
+"origin" "-65 7 438"
+"angles" "0 0 0"
+"target" "pulse1_3c"
+"targetname" "pulse1_3b"
+"classname" "path_corner"
+}
+{
+"origin" "2 2 64"
+"angles" "0 0 0"
+"target" "pulse1_2h"
+"targetname" "pulse1_2g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -14 135"
+"angles" "0 0 0"
+"target" "pulse1_2g"
+"targetname" "pulse1_2f"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -14 255"
+"angles" "0 0 0"
+"target" "pulse1_2f"
+"targetname" "pulse1_2e"
+"classname" "path_corner"
+}
+{
+"origin" "-36 -35 304"
+"angles" "0 0 0"
+"target" "pulse1_2e"
+"targetname" "pulse1_2d"
+"classname" "path_corner"
+}
+{
+"origin" "-36 -35 390"
+"angles" "0 0 0"
+"target" "pulse1_2d"
+"targetname" "pulse1_2c"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -14 438"
+"angles" "0 0 0"
+"target" "pulse1_2c"
+"targetname" "pulse1_2b"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -156 64"
+"angles" "0 0 0"
+"target" "pulse1_6h"
+"targetname" "pulse1_6g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -134 135"
+"angles" "0 0 0"
+"target" "pulse1_6g"
+"targetname" "pulse1_6f"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -134 255"
+"angles" "0 0 0"
+"target" "pulse1_6f"
+"targetname" "pulse1_6e"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -104 304"
+"angles" "0 0 0"
+"target" "pulse1_6e"
+"targetname" "pulse1_6d"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -104 390"
+"angles" "0 0 0"
+"target" "pulse1_6d"
+"targetname" "pulse1_6c"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -134 438"
+"angles" "0 0 0"
+"target" "pulse1_6c"
+"targetname" "pulse1_6b"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -134 536"
+"angles" "0 0 0"
+"target" "pulse1_6b"
+"targetname" "pulse1_6a"
+"classname" "path_corner"
+}
+{
+"origin" "1 -129 64"
+"angles" "0 0 0"
+"target" "pulse1_7h"
+"targetname" "pulse1_7g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -114 135"
+"angles" "0 0 0"
+"target" "pulse1_7g"
+"targetname" "pulse1_7f"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -114 255"
+"angles" "0 0 0"
+"target" "pulse1_7f"
+"targetname" "pulse1_7e"
+"classname" "path_corner"
+}
+{
+"origin" "-36 -92 304"
+"angles" "0 0 0"
+"target" "pulse1_7e"
+"targetname" "pulse1_7d"
+"classname" "path_corner"
+}
+{
+"origin" "-36 -92 390"
+"angles" "0 0 0"
+"target" "pulse1_7d"
+"targetname" "pulse1_7c"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -114 438"
+"angles" "0 0 0"
+"target" "pulse1_7c"
+"targetname" "pulse1_7b"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -114 536"
+"angles" "0 0 0"
+"target" "pulse1_7b"
+"targetname" "pulse1_7a"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 542"
+"angles" "0 0 0"
+"target" "pulse1_5a"
+"targetname" "pulse1_5i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 543"
+"angles" "0 0 0"
+"target" "pulse1_6a"
+"targetname" "pulse1_6i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 543"
+"angles" "0 0 0"
+"target" "pulse1_7a"
+"targetname" "pulse1_7i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 544"
+"angles" "0 0 0"
+"target" "pulse1_2a"
+"targetname" "pulse1_2i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 544"
+"angles" "0 0 0"
+"target" "pulse1_3a"
+"targetname" "pulse1_3i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 544"
+"angles" "0 0 0"
+"target" "pulse1_4a"
+"targetname" "pulse1_4i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 550"
+"targetname" "b1_1"
+"classname" "info_target"
+}
+{
+"origin" "-65 -64 50"
+"targetname" "b1_2"
+"classname" "info_target"
+}
+{
+"origin" "-65 -64 544"
+"angles" "0 0 0"
+"target" "pulse1_1a"
+"targetname" "pulse1_1i"
+"classname" "path_corner"
+}
+{
+"origin" "-65 6 539"
+"angles" "0 0 0"
+"target" "pulse1_3b"
+"targetname" "pulse1_3a"
+"classname" "path_corner"
+}
+{
+"origin" "-15 -14 539"
+"angles" "0 0 0"
+"target" "pulse1_2b"
+"targetname" "pulse1_2a"
+"classname" "path_corner"
+}
+{
+"origin" "-104 -64 306"
+"angles" "0 0 0"
+"target" "pulse1_8e"
+"targetname" "pulse1_8d"
+"classname" "path_corner"
+}
+{
+"origin" "-104 -64 392"
+"angles" "0 0 0"
+"target" "pulse1_8d"
+"targetname" "pulse1_8c"
+"classname" "path_corner"
+}
+{
+"origin" "-135 -64 441"
+"angles" "0 0 0"
+"target" "pulse1_8c"
+"targetname" "pulse1_8b"
+"classname" "path_corner"
+}
+{
+"origin" "-135 -64 137"
+"angles" "0 0 0"
+"target" "pulse1_8g"
+"targetname" "pulse1_8f"
+"classname" "path_corner"
+}
+{
+"origin" "-135 -64 257"
+"angles" "0 0 0"
+"target" "pulse1_8f"
+"targetname" "pulse1_8e"
+"classname" "path_corner"
+}
+{
+"origin" "-130 -129 66"
+"angles" "0 0 0"
+"target" "pulse1_5h"
+"targetname" "pulse1_5g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -114 137"
+"angles" "0 0 0"
+"target" "pulse1_5g"
+"targetname" "pulse1_5f"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -114 257"
+"angles" "0 0 0"
+"target" "pulse1_5f"
+"targetname" "pulse1_5e"
+"classname" "path_corner"
+}
+{
+"origin" "-93 -92 306"
+"angles" "0 0 0"
+"target" "pulse1_5e"
+"targetname" "pulse1_5d"
+"classname" "path_corner"
+}
+{
+"origin" "-93 -92 392"
+"angles" "0 0 0"
+"target" "pulse1_5d"
+"targetname" "pulse1_5c"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -114 441"
+"angles" "0 0 0"
+"target" "pulse1_5c"
+"targetname" "pulse1_5b"
+"classname" "path_corner"
+}
+{
+"origin" "-130 1 66"
+"angles" "0 0 0"
+"target" "pulse1_4h"
+"targetname" "pulse1_4g"
+"speed" "600"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -14 137"
+"angles" "0 0 0"
+"target" "pulse1_4g"
+"targetname" "pulse1_4f"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -14 257"
+"angles" "0 0 0"
+"target" "pulse1_4f"
+"targetname" "pulse1_4e"
+"classname" "path_corner"
+}
+{
+"origin" "-93 -36 306"
+"angles" "0 0 0"
+"target" "pulse1_4e"
+"targetname" "pulse1_4d"
+"classname" "path_corner"
+}
+{
+"origin" "-93 -36 392"
+"angles" "0 0 0"
+"target" "pulse1_4d"
+"targetname" "pulse1_4c"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -14 441"
+"angles" "0 0 0"
+"target" "pulse1_4c"
+"targetname" "pulse1_4b"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -14 539"
+"angles" "0 0 0"
+"target" "pulse1_4b"
+"targetname" "pulse1_4a"
+"classname" "path_corner"
+}
+{
+"origin" "-135 -64 538"
+"angles" "0 0 0"
+"target" "pulse1_8b"
+"targetname" "pulse1_8a"
+"classname" "path_corner"
+}
+{
+"origin" "-115 -114 539"
+"angles" "0 0 0"
+"target" "pulse1_5b"
+"targetname" "pulse1_5a"
+"classname" "path_corner"
+}
+{
+"origin" "-87 -65 344"
+"pitchstart" "100"
+"pitch" "100"
+"health" "10"
+"message" "ambience/pounder.wav"
+"spawnflags" "8"
+"classname" "ambient_generic"
+}
+{
+"origin" "-157 -64 66"
+"angles" "0 0 0"
+"target" "pulse1_8h"
+"targetname" "pulse1_8g"
+"speed" "578"
+"classname" "path_corner"
+}
+{
+"origin" "-364 -8 312"
+"juice" "0"
+"p1_8" "0"
+"p1_7" "0"
+"p1_6" "0"
+"p1_5" "0"
+"p1_4" "0"
+"p1_3" "0"
+"p1_2" "0"
+"p1_1" "0"
+"targetname" "p1_m"
+"classname" "multi_manager"
+}
+{
+"origin" "-484 152 352"
+"Radius" "256"
+"LightningEnd" "b1_1"
+"LightningStart" "b1_2"
+"StrikeTime" "10"
+"framerate" "30"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "30"
+"BoltWidth" "15"
+"rendercolor" "128 0 64"
+"renderamt" "80"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-484 104 352"
+"Radius" "256"
+"LightningEnd" "b1_1"
+"LightningStart" "b1_2"
+"StrikeTime" "10"
+"framerate" "30"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "10"
+"BoltWidth" "200"
+"rendercolor" "128 0 64"
+"renderamt" "50"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-484 56 352"
+"Radius" "256"
+"LightningEnd" "b1_1"
+"LightningStart" "b1_2"
+"StrikeTime" "10"
+"framerate" "40"
+"TextureScroll" "45"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "5"
+"BoltWidth" "255"
+"rendercolor" "128 0 64"
+"renderamt" "50"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-484 8 352"
+"Radius" "256"
+"LightningEnd" "b1_1"
+"LightningStart" "b1_2"
+"StrikeTime" "10"
+"framerate" "60"
+"TextureScroll" "75"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "5"
+"BoltWidth" "255"
+"rendercolor" "128 0 64"
+"renderamt" "50"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"model" "*3"
+"delay" "2"
+"target" "p1_m"
+"classname" "trigger_once"
+}
+{
+"model" "*4"
+"origin" "-296 368 368"
+"volume" "0.85"
+"targetname" "p1_1"
+"target" "pulse1_1a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*5"
+"origin" "-296 336 368"
+"volume" "0.85"
+"targetname" "p1_2"
+"target" "pulse1_2a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*6"
+"origin" "-296 304 368"
+"volume" "0.85"
+"targetname" "p1_3"
+"target" "pulse1_3a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*7"
+"origin" "-296 272 368"
+"volume" "0.85"
+"targetname" "p1_4"
+"target" "pulse1_4a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*8"
+"origin" "-296 240 368"
+"volume" "0.85"
+"targetname" "p1_5"
+"target" "pulse1_5a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*9"
+"origin" "-296 208 368"
+"volume" "0.85"
+"targetname" "p1_6"
+"target" "pulse1_6a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*10"
+"origin" "-296 176 368"
+"volume" "0.85"
+"targetname" "p1_7"
+"target" "pulse1_7a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "-352 360 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_2"
+"LightningStart" "p1_1"
+"classname" "env_beam"
+}
+{
+"origin" "-352 324 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_3"
+"LightningStart" "p1_2"
+"classname" "env_beam"
+}
+{
+"origin" "-352 288 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_4"
+"LightningStart" "p1_3"
+"classname" "env_beam"
+}
+{
+"origin" "-352 252 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_6"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-352 216 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_7"
+"LightningStart" "p1_6"
+"classname" "env_beam"
+}
+{
+"origin" "-392 360 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_2"
+"LightningStart" "p1_1"
+"classname" "env_beam"
+}
+{
+"origin" "-392 324 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_3"
+"LightningStart" "p1_2"
+"classname" "env_beam"
+}
+{
+"origin" "-392 288 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_4"
+"LightningStart" "p1_3"
+"classname" "env_beam"
+}
+{
+"origin" "-392 252 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_6"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-392 216 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_7"
+"LightningStart" "p1_6"
+"classname" "env_beam"
+}
+{
+"model" "*11"
+"origin" "-296 148 368"
+"volume" "0.85"
+"targetname" "p1_8"
+"target" "pulse1_8a"
+"speed" "800"
+"rendercolor" "0 0 0"
+"rendermode" "2"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "-392 136 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_4"
+"classname" "env_beam"
+}
+{
+"origin" "-352 136 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_4"
+"classname" "env_beam"
+}
+{
+"origin" "-392 88 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-352 88 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-352 172 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "120"
+"BoltWidth" "15"
+"rendercolor" "255 128 255"
+"renderamt" "150"
+"LightningEnd" "p1_1"
+"LightningStart" "p1_7"
+"classname" "env_beam"
+}
+{
+"origin" "-392 172 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "50"
+"BoltWidth" "50"
+"rendercolor" "255 128 255"
+"renderamt" "90"
+"LightningEnd" "p1_1"
+"LightningStart" "p1_7"
+"classname" "env_beam"
+}
+{
+"origin" "-432 360 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_2"
+"LightningStart" "p1_1"
+"classname" "env_beam"
+}
+{
+"origin" "-432 324 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_3"
+"LightningStart" "p1_2"
+"classname" "env_beam"
+}
+{
+"origin" "-432 288 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_4"
+"LightningStart" "p1_3"
+"classname" "env_beam"
+}
+{
+"origin" "-432 252 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_6"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-432 216 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_7"
+"LightningStart" "p1_6"
+"classname" "env_beam"
+}
+{
+"origin" "-432 136 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_4"
+"classname" "env_beam"
+}
+{
+"origin" "-432 88 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_8"
+"LightningStart" "p1_5"
+"classname" "env_beam"
+}
+{
+"origin" "-432 172 360"
+"Radius" "256"
+"targetname" "juice"
+"StrikeTime" "50"
+"framerate" "10"
+"TextureScroll" "35"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "70"
+"BoltWidth" "100"
+"rendercolor" "255 128 255"
+"renderamt" "60"
+"LightningEnd" "p1_1"
+"LightningStart" "p1_7"
+"classname" "env_beam"
+}
+{
+"origin" "-272 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_3"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"model" "*12"
+"origin" "-196 -368 158"
+"volume" "0.85"
+"target" "x"
+"targetname" "a_2"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "-236 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_4"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"model" "*13"
+"origin" "-176 -368 158"
+"volume" "0.85"
+"target" "x1"
+"targetname" "a_3"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*14"
+"origin" "-156 -368 158"
+"volume" "0.85"
+"target" "x2"
+"targetname" "a_4"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "-200 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_5"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"model" "*15"
+"origin" "-136 -368 158"
+"volume" "0.85"
+"target" "x3"
+"targetname" "a_5"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*16"
+"origin" "-116 -368 158"
+"volume" "0.85"
+"target" "x4"
+"targetname" "a_6"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*17"
+"origin" "-96 -368 158"
+"volume" "0.85"
+"target" "x5"
+"targetname" "a_7"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*18"
+"origin" "-76 -368 158"
+"volume" "0.85"
+"target" "x6"
+"targetname" "a_8"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"model" "*19"
+"origin" "-56 -368 158"
+"volume" "0.85"
+"target" "x7"
+"targetname" "a_9"
+"speed" "120"
+"rendercolor" "0 0 0"
+"renderamt" "80"
+"rendermode" "5"
+"renderfx" "4"
+"spawnflags" "8"
+"classname" "func_train"
+}
+{
+"origin" "-164 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_6"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-128 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_7"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-92 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_8"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-56 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_9"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-20 -344 124"
+"Radius" "256"
+"StrikeTime" "1"
+"TextureScroll" "20"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "2"
+"BoltWidth" "200"
+"rendercolor" "220 10 10"
+"renderamt" "100"
+"LightningEnd" "a_2"
+"LightningStart" "x"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "172 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "40"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "10"
+"BoltWidth" "8"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "130"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "132 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "40"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "60"
+"BoltWidth" "30"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "100"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "52 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "60"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "10"
+"BoltWidth" "30"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "160"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "92 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "60"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "100"
+"BoltWidth" "10"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "170"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "12 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "60"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "80"
+"BoltWidth" "8"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "50"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-28 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "60"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "80"
+"BoltWidth" "12"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "50"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-68 -460 124"
+"Radius" "256"
+"StrikeTime" "3"
+"framerate" "10"
+"TextureScroll" "60"
+"texture" "sprites/lgtning.spr"
+"NoiseAmplitude" "10"
+"BoltWidth" "30"
+"life" "2"
+"rendercolor" "255 0 255"
+"renderamt" "160"
+"LightningEnd" "1b"
+"LightningStart" "1a"
+"spawnflags" "1"
+"classname" "env_beam"
+}
+{
+"origin" "-64 -30 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x"
+"targetname" "spin"
+"classname" "path_corner"
+}
+{
+"origin" "-90 -38 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x1"
+"targetname" "spin01"
+"classname" "path_corner"
+}
+{
+"origin" "-101 -63 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x2"
+"targetname" "spin02"
+"classname" "path_corner"
+}
+{
+"origin" "-91 -88 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x3"
+"targetname" "spin03"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -99 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x4"
+"targetname" "spin04"
+"classname" "path_corner"
+}
+{
+"origin" "-39 -89 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x5"
+"targetname" "spin05"
+"classname" "path_corner"
+}
+{
+"origin" "-28 -64 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x6"
+"targetname" "spin06"
+"classname" "path_corner"
+}
+{
+"origin" "-39 -39 24"
+"angles" "0 0 0"
+"wait" "1"
+"target" "x7"
+"targetname" "spin07"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin01"
+"targetname" "x1"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin"
+"targetname" "x"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin02"
+"targetname" "x2"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin03"
+"targetname" "x3"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin04"
+"targetname" "x4"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin05"
+"targetname" "x5"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin06"
+"targetname" "x6"
+"classname" "path_corner"
+}
+{
+"origin" "-65 -64 24"
+"angles" "0 0 0"
+"target" "spin07"
+"targetname" "x7"
+"classname" "path_corner"
+}
+{
+"origin" "-36 -308 220"
+"a_9" "0"
+"a_8" "0"
+"a_7" "0"
+"a_6" "0"
+"a_5" "0"
+"a_4" "0"
+"a_3" "0"
+"a_2" "0"
+"targetname" "a_x"
+"classname" "multi_manager"
+}
+{
+"model" "*20"
+"target" "a_x"
+"classname" "trigger_once"
+}
+{
+"model" "*21"
+"health" "100"
+"targetname" "sa"
+"renderamt" "200"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"origin" "-64 -60 24"
+"_fade" "1.0"
+"_light" "255 0 0 200"
+"classname" "light"
+}
+{
+"origin" "-499 -418 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-75 -441 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "393 -269 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "330 342 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-170 358 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-431 299 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-419 -138 64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-64 -64 116"
+"TriggerCondition" "4"
+"TriggerTarget" "sa"
+"model" "models/jungle/npcs/megaagrunt.mdl"
+"health" "6000"
+"renderfx" "19"
+"netname" "Mega Alien Grunt"
+"displayname" "Mega Alien Grunt"
+"angles" "0 179 0"
+"rendercolor" "255 128 255"
+"classname" "monster_alien_grunt"
+}
+{
+"origin" "-523 35 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-473 68 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-455 37 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-469 -5 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-501 -10 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-518 -42 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-503 -93 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-473 -69 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-416 -23 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-445 -40 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_gaussclip"
+}
+{
+"origin" "-488 -37 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "230 0 0"
+"classname" "weapon_gauss"
+}
+{
+"origin" "-439 0 80"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "230 0 0"
+"classname" "weapon_egon"
+}
+{
+"origin" "-1600 1600 -64"
+"angles" "0 -90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"model" "*22"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*23"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*24"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"origin" "-1643 212 160"
+"displayname" "Super Alien Slave"
+"health" "1200"
+"netname" "Monster"
+"angles" "0 160 0"
+"rendercolor" "0 0 0"
+"classname" "monster_alien_slave"
+}
+{
+"origin" "-1549 339 -128"
+"displayname" "Casi Super Alien Slave"
+"health" "750"
+"netname" "Monster"
+"angles" "0 207 0"
+"rendercolor" "0 0 0"
+"classname" "monster_alien_slave"
+}
+{
+"origin" "-1600 1632 -64"
+"_fade" "1.0"
+"_light" "128 255 0 200"
+"classname" "light"
+}
+{
+"origin" "-1696 256 -64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-1600 128 -64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-1696 128 -64"
+"_fade" "1.0"
+"_light" "255 128 0 200"
+"classname" "light"
+}
+{
+"origin" "-1600 1504 -64"
+"angles" "0 -90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-1600 1408 -64"
+"angles" "0 -90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-1600 1312 -64"
+"angles" "0 -90 0"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-1600 1600 -96"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_9mmbox"
+}
+{
+"origin" "-1600 1504 -96"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_9mmbox"
+}
+{
+"origin" "-1600 1408 -96"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_9mmbox"
+}
+{
+"origin" "-1600 1312 -96"
+"angles" "0 0 0"
+"renderfx" "19"
+"rendermode" "0"
+"renderamt" "50"
+"rendercolor" "90 0 230"
+"classname" "ammo_9mmbox"
+}
+{
+"model" "*25"
+"WaveHeight" "3.2"
+"skin" "-5"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"origin" "-64 -66 85"
+"renderamt" "255"
+"rendermode" "5"
+"model" "sprites/enter1.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "255 0 0"
+"targetname" "sa"
+"classname" "env_sprite"
+}
+{
+"origin" "-1600 1600 -62"
+"renderamt" "255"
+"rendermode" "5"
+"model" "sprites/exit1.spr"
+"framerate" "10.0"
+"angles" "0 0 0"
+"rendercolor" "0 125 125"
+"spawnflags" "1"
+"classname" "env_sprite"
+}
+{
+"origin" "-65 -65 128"
+"classname" "env_sprite"
+"model" "sprites/level_change_opfor.spr"
+"scale" "0.25"
+"rendermode" "0"
+"vp_type" "0"
+"targetname" "sa"
+}
+ 
