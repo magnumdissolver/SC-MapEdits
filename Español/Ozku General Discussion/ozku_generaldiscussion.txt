@@ -11,7 +11,7 @@
 "origin" "0 0 0"
 "targetname" "w.music"
 "message" "lynx/ost/shudder.mp3"
-"volume" "10"
+"volume" "5"
 "spawnflags" "1"
 "classname" "ambient_music"
 }

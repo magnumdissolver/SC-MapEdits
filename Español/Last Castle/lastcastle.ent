@@ -4,10 +4,29 @@
 "MaxRange" "4096"
 "startdark" "1"
 "message" "Last Castle"
+"sounds" "1"
 "skyname" "night"
 "classname" "worldspawn"
 }
 ///////////////////////// START RIPENT /////////////////////////
+{
+"origin" "629 307 -731"
+"angles" "0 -90 0"
+"m_flCustomRespawnTime" "1"
+"classname" "item_longjump"
+}
+{
+"origin" "782 674 -731"
+"angles" "0 0 0"
+"m_flCustomRespawnTime" "20"
+"classname" "item_battery"
+}
+{
+"origin" "465 674 -731"
+"angles" "0 0 0"
+"m_flCustomRespawnTime" "20"
+"classname" "item_battery"
+}
 {
 "origin" "1152 -112 36"
 "angles" "0 0 0"
@@ -32,6 +51,7 @@
 {
 "origin" "-388 372 36"
 "angles" "0 -50 0"
+"m_flCustomRespawnTime" "30"
 "classname" "weapon_saw"
 }
 {
@@ -47,7 +67,7 @@
 {
 "origin" "-473 -1143 264"
 "targetname" "repel3"
-"health" "250"
+"health" "100"
 "monstertype" "monster_human_grunt"
 "gag" "-1"
 "notsolid" "-1"
@@ -55,7 +75,7 @@
 "weapons" "130"
 "m_imaxlivechildren" "1"
 "delay" "5"
-"monstercount" "7"
+"monstercount" "3"
 "rendercolor" "0 0 0"
 "angles" "0 30 0"
 "classname" "squadmaker"
@@ -63,15 +83,15 @@
 {
 "origin" "-411 -595 264"
 "targetname" "repel3"
-"health" "250"
+"health" "100"
 "monstertype" "monster_human_grunt"
 "gag" "-1"
 "notsolid" "-1"
 "new_body" "1"
 "weapons" "3"
-"m_imaxlivechildren" "2"
+"m_imaxlivechildren" "1"
 "delay" "5"
-"monstercount" "15"
+"monstercount" "3"
 "rendercolor" "0 0 0"
 "angles" "0 51 0"
 "classname" "squadmaker"
@@ -79,7 +99,7 @@
 {
 "origin" "850 -1088 264"
 "targetname" "repel4"
-"health" "250"
+"health" "100"
 "monstertype" "monster_human_grunt"
 "gag" "-1"
 "notsolid" "-1"
@@ -87,7 +107,7 @@
 "weapons" "1"
 "m_imaxlivechildren" "1"
 "delay" "20"
-"monstercount" "5"
+"monstercount" "3"
 "rendercolor" "0 0 0"
 "angles" "0 138 0"
 "classname" "squadmaker"
@@ -95,7 +115,7 @@
 {
 "origin" "850 -1088 264"
 "targetname" "repel4"
-"health" "350"
+"health" "125"
 "monstertype" "monster_human_grunt"
 "gag" "-1"
 "notsolid" "-1"
@@ -103,11 +123,39 @@
 "weapons" "1"
 "m_imaxlivechildren" "2"
 "delay" "5"
-"monstercount" "15"
+"monstercount" "4"
 "rendercolor" "0 0 0"
 "angles" "0 -145 0"
 "classname" "squadmaker"
 }
+{
+"origin" "0 0 0"
+"spawnflags" "1"
+"target" "w.msg.sfx"
+"effect" "2"
+"message" "Mapa creado por Ben Finn (Fortune)"
+"targetname" "w.credits"
+"channel" "4"
+"fxtime" "0.25"
+"holdtime" "4"
+"fadeout" "0.5"
+"fadein" "0.025"
+"color2" "240 110 0"
+"color" "255 255 255"
+"y" ".6"
+"x" "-1"
+"classname" "game_text"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "113"
+"playmode" "1"
+"message" "buttons/blip3.wav"
+"targetname" "w.msg.sfx"
+"health" "10"
+"classname" "ambient_generic"
+}
+
 /////////////////////////  END RIPENT  /////////////////////////
 {
 "model" "*1"
@@ -977,8 +1025,8 @@
 "fadeout" "0.5"
 "fadein" "1.5"
 "color2" "240 110 0"
-"color" "10 0 200"
-"y" "-1"
+"color" "230 230 230"
+"y" ".6"
 "x" "-1"
 "classname" "game_text"
 }
@@ -1079,11 +1127,18 @@
 {
 "origin" "358 -606 -768"
 "angles" "0 0 0"
-"rendercolor" "0 0 0"
+"disable_minigun_drop" "1"
+"model" "models/wayne/hwgrunt_ld.mdl"
+"health" "600"
+"classname" "monster_hwgrunt"
+}
+{
+"origin" "-904 211 5"
 "health" "400"
-"weapons" "7"
-"is_player_ally" "1"
-"classname" "monster_bodyguard"
+"angles" "0 60 0"
+"disable_minigun_drop" "1"
+"model" "models/wayne/hwgrunt_ld.mdl"
+"classname" "monster_hwgrunt"
 }
 {
 "model" "*24"
@@ -1141,15 +1196,16 @@
 "origin" "136 32 -624"
 "effect" "2"
 "message" "Acaben con el General!"
+"target" "w.msg.sfx"
 "targetname" "endmoma"
 "channel" "1"
-"fxtime" "0.3"
+"fxtime" "0.25"
 "holdtime" "4"
 "fadeout" "0.5"
-"fadein" "0.2"
+"fadein" "0.025"
 "color2" "85 181 74"
 "color" "192 192 192"
-"y" "-1"
+"y" ".4"
 "x" "-1"
 "spawnflags" "1"
 "classname" "game_text"
@@ -1257,7 +1313,7 @@
 }
 {
 "origin" "-801 161 20"
-"message" "Lees la hoja.\n-14 de marzo de 1981-\nMurió el General Wasski."
+"message" "Lees la hoja.\n-14 de marzo de 1981-\nMurio el General Wasski."
 "targetname" "sideqpap"
 "channel" "1"
 "fxtime" "0.25"
@@ -1266,19 +1322,9 @@
 "fadein" "1.5"
 "color2" "26 12 199"
 "color" "100 100 100"
-"y" "-1"
+"y" ".6"
 "x" "-1"
 "classname" "game_text"
-}
-{
-"origin" "-904 211 5"
-"netname" "Rawr Guard"
-"health" "400"
-"angles" "0 60 0"
-"rendercolor" "0 0 0"
-"weapons" "7"
-"is_player_ally" "1"
-"classname" "monster_bodyguard"
 }
 {
 "origin" "-857 440 7"
@@ -1393,7 +1439,8 @@
 }
 {
 "origin" "282 -640 -192"
-"message" "\n\nEl castillo ha caído..."
+"message" "\n\nEl castillo ha caido..."
+"target" "w.msg.sfx"
 "targetname" "endgametext"
 "channel" "1"
 "fxtime" "0.25"
@@ -1402,7 +1449,7 @@
 "fadein" "1.5"
 "color2" "240 110 0"
 "color" "1 1 199"
-"y" "-1"
+"y" ".4"
 "x" "-1"
 "spawnflags" "1"
 "classname" "game_text"
@@ -1430,6 +1477,7 @@
 "mor1" "23"
 "endgameshake" "26"
 "endgametext" "5"
+"w.credits" "10"
 "targetname" "scene_fail_mm"
 "classname" "multi_manager"
 }

@@ -1,454 +1,46 @@
 {
-"wad" "\program files\steam\steamapps\ilovepies48030@aol.com\half-life\valve\halflife.wad;\program files\steam\steamapps\ilovepies48030@aol.com\half-life\valve\liquids.wad;"
+"wad" "halflife.wad;liquids.wad;"
 "mapversion" "220"
-"globalmodellist" "../../maps/buff_zombies.gmr"
 "MaxRange" "4096"
 "classname" "worldspawn"
 }
-///////////////////////// START RIPENT /////////////////////////
 {
-"origin" "948 -553 84"
-"angles" "0 0 180"
-"targetname" "w.babyarrows1"
-"spawnflags" "0"
-"scale" "1"
-"framerate" "5"
-"vp_type" "4"
-"renderamt" "255"
-"rendermode" "5"
+"model" "*73"
+"classname" "func_monsterclip"
+}
+{
+"model" "*103"
 "rendercolor" "0 0 0"
-"model" "sprites/tc/babyarrows.spr"
-"classname" "env_sprite"
+"classname" "func_recharge"
 }
 {
-"origin" "530 260 241"
-"angles" "90 0 0"
-"targetname" "w.babyarrows2"
-"spawnflags" "0"
-"scale" "1"
-"framerate" "5"
-"vp_type" "4"
-"renderamt" "255"
-"rendermode" "5"
+"model" "*104"
 "rendercolor" "0 0 0"
-"model" "sprites/tc/babyarrows.spr"
-"classname" "env_sprite"
+"classname" "func_recharge"
 }
 {
-"origin" "300 208 148"
-"angles" "0 180 0"
-"scale" ".4"
-"spawnflags" "1"
-"model" "sprites/tc/wrongway.spr"
-"vp_type" "4"
-"framerate" "5"
-"rendermode" "2"
-"renderamt" "150"
-"classname" "env_sprite"
-}
-{
-"origin" "0 0 0"
-"message" "debris/beamstart8.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"targetname" "w.tp.sfx"
-"spawnflags" "49"
-"classname" "ambient_generic"
-}
-{
-"origin" "0 0 0"
-"targetname" "w.endfade"
-"renderamt" "255"
+"model" "*105"
 "rendercolor" "0 0 0"
-"duration" ".3"
-"holdtime" "15"
-"classname" "env_fade"
+"classname" "func_recharge"
 }
 {
-"origin" "0 0 0"
-"targetname" "w.endseq.mm"
-"w.endfade" "5"
-"w.tp.sfx" "5"
-"w.credits" "6"
-"w.theend" "12"
-"classname" "multi_manager"
+"model" "*106"
+"rendercolor" "0 0 0"
+"classname" "func_recharge"
 }
 {
-"origin" "0 0 0"
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "5"
-"fadeout" "1"
-"fadein" "2"
-"color2" "255 255 255"
-"color" "255 255 255"
-"y" ".6"
-"x" "-1"
-"message" "Mapa creado por ZenArcade"
-"targetname" "w.credits"
-"spawnflags" "1"
-"classname" "game_text"
+"model" "*87"
+"rendercolor" "0 0 0"
+"classname" "func_recharge"
 }
 {
-"origin" "-906 250 -1060"
-"angles" "0 0 0"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_kingpin"
-"targetname" "w.DONTCRASHTHESERVERLOL"
-"classname" "squadmaker"
-}
-{
-"origin" "-906 250 -1060"
-"angles" "0 0 0"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_hwgrunt"
-"targetname" "w.DONTCRASHTHESERVERLOL"
-"classname" "squadmaker"
-}
-{
-"origin" "0 0 0"
-"targetname" "w.boss.counter"
-"target" "w.endseq.mm"
-"delay" "0"
-"spawnflags" "1"
-"frags" "0"
-"health" "3"
-"classname" "game_counter"
-}
-{
-"origin" "-906 250 -1060"
-"-classify" "4"
-"-health" "3000"
-"-TriggerTarget" "w.boss.counter"
-"-TriggerCondition" "4"
-"targetname" "detwall"
-"m_iszCrtEntChildClass" "monster_kingpin"
-"classname" "trigger_createentity"
-}
-{
-"origin" "-1592 447 -1060"
-"-classify" "4"
-"-health" "800"
-"-TriggerTarget" "w.boss.counter"
-"-TriggerCondition" "4"
-"targetname" "detwall"
-"m_iszCrtEntChildClass" "monster_hwgrunt"
-"classname" "trigger_createentity"
-}
-{
-"origin" "-1592 15 -1060"
-"-classify" "4"
-"-health" "800"
-"-TriggerTarget" "w.boss.counter"
-"-TriggerCondition" "4"
-"targetname" "detwall"
-"m_iszCrtEntChildClass" "monster_hwgrunt"
-"classname" "trigger_createentity"
-}
-{
-"origin" "-1001 25 -1040"
-"angles" "0 40 0"
-"classify" "4"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "1"
-"targetname" "detwall"
-"classname" "squadmaker"
-}
-{
-"origin" "-997 423 -1040"
-"angles" "0 -25 0"
-"classify" "4"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "1"
-"targetname" "detwall"
-"classname" "squadmaker"
-}
-{
-"origin" "290 2117 -1040"
-"angles" "0 -65 0"
-"weapons" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "70 2117 -1040"
-"angles" "0 -65 0"
-"weapons" "8"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "-164 2117 -1040"
-"angles" "0 -65 0"
-"weapons" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "66 2746 -935"
-"angles" "0 -90 0"
-"weapons" "64"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "304 2337 -1005"
-"angles" "0 -90 0"
-"weapons" "3"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "-180 2337 -1005"
-"angles" "0 -70 0"
-"weapons" "3"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "67 2337 -1005"
-"angles" "0 -90 0"
-"weapons" "128"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs4"
-"classname" "squadmaker"
-}
-{
-"origin" "0 0 0"
-"w.babyarrows3" ".001#1"
-"w.2hrd1" ".5"
-"w.2hrd2" "5"
-"w.2hrd3" "10"
-"targetname" "w.horde2.mm"
-"classname" "multi_manager"
-}
-{
-"origin" "2396 38 -1050"
-"angles" "0 90 0"
-"classify" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "1"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd3"
-"classname" "squadmaker"
-}
-{
-"origin" "2396 456 -1050"
-"angles" "0 -90 0"
-"classify" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "1"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd3"
-"classname" "squadmaker"
-}
-{
-"origin" "2138 75 -1050"
-"angles" "0 -170 0"
-"m_imaxlivechildren" "2"
-"monstercount" "6"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd2"
-"classname" "squadmaker"
-}
-{
-"origin" "2138 380 -1050"
-"angles" "0 170 0"
-"m_imaxlivechildren" "2"
-"monstercount" "6"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd1"
-"classname" "squadmaker"
-}
-{
-"origin" "1652 372 -1050"
-"angles" "0 -150 0"
-"m_imaxlivechildren" "2"
-"monstercount" "3"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd2"
-"classname" "squadmaker"
-}
-{
-"origin" "1689 75 -1050"
-"angles" "0 150 0"
-"m_imaxlivechildren" "2"
-"monstercount" "3"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.2hrd1"
-"classname" "squadmaker"
-}
-{
-"origin" "-401 -1234 -1055"
-"angles" "0 0 0"
-"classify" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs3"
-"classname" "squadmaker"
-}
-{
-"origin" "-303 -1333 -1055"
-"angles" "0 15 0"
-"classify" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs3"
-"classname" "squadmaker"
-}
-{
-"origin" "413 -1228 -1055"
-"angles" "0 175 0"
-"classify" "5"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "1"
-"targetname" "w.morenpcs3"
-"classname" "squadmaker"
-}
-{
-"origin" "323 2386 280"
-"angles" "0 -50 0"
-"weapons" "1"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs2"
-"classname" "squadmaker"
-}
-{
-"origin" "1232 2295 280"
-"angles" "0 -50 0"
-"weapons" "1"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs2"
-"classname" "squadmaker"
-}
-{
-"origin" "664 1922 280"
-"angles" "0 -96 0"
-"weapons" "128"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs2"
-"classname" "squadmaker"
-}
-{
-"origin" "543 563 280"
-"angles" "0 -107 0"
-"weapons" "8"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs2"
-"classname" "squadmaker"
-}
-{
-"origin" "435 740 280"
-"angles" "0 -76 0"
-"weapons" "3"
-"m_imaxlivechildren" "1"
-"monstercount" "1"
-"monstertype" "monster_robogrunt"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs2"
-"classname" "squadmaker"
+"model" "*88"
+"rendercolor" "0 0 0"
+"classname" "func_recharge"
 }
 {
 "model" "*22"
+"brushmodel" "*22"
 "lip" "5"
 "master" "w.horde1.block"
 "fireonopening" "w.morenpcs2.r"
@@ -462,1823 +54,230 @@
 "classname" "func_door"
 }
 {
-"origin" "0 0 0"
-"delay" "0"
-"target" "w.morenpcs2"
-"targetname" "w.morenpcs2.r"
-"triggerstate" "1"
-"spawnflags" "1"
-"classname" "trigger_relay"
-}
-{
-"origin" "0 0 0"
-"targetname" "w.horde1.block"
-"classname" "multisource"
-}
-{
-"origin" "0 0 0"
-"targetname" "w.xentemplate"
-"angles" "0 270 0"
-"monstertype" "monster_headcrab"
-"m_flBeamRadius" "255"
-"m_iBeamAlpha" "128"
-"m_iBeamCount" "8"
-"m_vBeamColor" "217 226 146"
-"m_flLightRadius" "160"
-"m_vLightColor" "39 209 137"
-"m_flStartSpriteFramerate" "12"
-"m_flStartSpriteScale" "1.0"
-"m_iStartSpriteAlpha" "255"
-"m_vStartSpriteColor" "65 209 61"
-"m_flEndSpriteFramerate" "12"
-"m_flEndSpriteScale" "1.0"
-"m_iEndSpriteAlpha" "255"
-"m_vEndSpriteColor" "159 240 214"
-"classname" "env_xenmaker"
-}
-{
-"origin" "1171 36 276"
-"angles" "0 180 0"
-"target" "w.horde1.mm"
-"spawnflags" "1024"
-"classname" "item_battery"
-}
-{
-"origin" "0 0 0"
-"spawn1" ".001#0"
-"spawn2" ".001#1"
-"w.babyarrows1" ".001#1"
-"w.1hrd1" ".5"
-"w.1hrd2" "1.5"
-"w.1hrd3" "5"
-"w.1hrd4" "7"
-"w.horde1.block" "90"
-"w.babyarrows2" "100#1"
-"targetname" "w.horde1.mm"
-"classname" "multi_manager"
-}
-{
-"origin" "958 -567 280"
-"angles" "0 0 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"dmg" "10"
-"new_body" "-1"
-"delay" "0"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd1"
-"classname" "squadmaker"
-}
-{
-"origin" "1278 352 280"
-"angles" "0 -120 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd1"
-"classname" "squadmaker"
-}
-{
-"origin" "973 -361 280"
-"angles" "0 45 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd1"
-"classname" "squadmaker"
-}
-{
-"origin" "1478 103 280"
-"angles" "0 -155 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd2"
-"classname" "squadmaker"
-}
-{
-"origin" "1383 -345 280"
-"angles" "0 130 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd2"
-"classname" "squadmaker"
-}
-{
-"origin" "820 -568 280"
-"angles" "0 -135 0"
-"m_imaxlivechildren" "2"
-"monstercount" "5"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd3"
-"classname" "squadmaker"
-}
-{
-"origin" "469 220 280"
-"angles" "0 -20 0"
-"m_imaxlivechildren" "2"
-"monstercount" "5"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd3"
-"classname" "squadmaker"
-}
-{
-"origin" "822 -1806 170"
-"angles" "0 -20 0"
-"m_imaxlivechildren" "2"
-"monstercount" "5"
-"monstertype" "monster_gonome"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd3"
-"classname" "squadmaker"
-}
-{
-"origin" "1299 -1476 280"
-"angles" "0 160 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd4"
-"classname" "squadmaker"
-}
-{
-"origin" "363 -1386 280"
-"angles" "0 45 0"
-"m_imaxlivechildren" "2"
-"monstercount" "4"
-"new_model" "models/buff_zombies/zombie.mdl"
-"displayname" "Zombie"
-"monstertype" "monster_zombie_soldier"
-"new_body" "-1"
-"delay" "2"
-"xenmaker" "w.xentemplate"
-"targetname" "w.1hrd4"
-"classname" "squadmaker"
-}
-{
-"origin" "-560 1661 -1040"
-"angles" "0 -135 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "669 1661 -1040"
-"angles" "0 -35 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "370 -1416 276"
-"angles" "0 180 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "370 -1341 276"
-"angles" "0 180 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "370 -1266 276"
-"angles" "0 180 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "370 -1191 276"
-"angles" "0 180 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "575 -1200 -1055"
-"angles" "0 90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "650 -1200 -1055"
-"angles" "0 90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "500 2007 280"
-"angles" "0 -90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "425 2007 280"
-"angles" "0 -90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "900 2007 280"
-"angles" "0 -90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "975 2007 280"
-"angles" "0 -90 0"
-"classname" "item_healthkit"
-}
-{
-"origin" "893 -1743 167"
-"angles" "0 90 0"
-"spawnflags" "1"
-"classname" "monster_headcrab"
-}
-{
-"origin" "182 374 135"
-"angles" "0 180 0"
-"weapons" "1"
-"m_imaxlivechildren" "3"
-"monstercount" "3"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "207 74 135"
-"angles" "0 180 0"
-"weapons" "1"
-"m_imaxlivechildren" "3"
-"monstercount" "3"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "-304 -109 120"
-"angles" "0 180 0"
-"weapons" "3"
-"m_imaxlivechildren" "2"
-"monstercount" "2"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "-304 39 120"
-"angles" "0 180 0"
-"weapons" "3"
-"m_imaxlivechildren" "2"
-"monstercount" "2"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "743 -1437 55"
-"angles" "0 80 0"
-"weapons" "5"
-"m_imaxlivechildren" "2"
-"monstercount" "2"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "1030 -1431 55"
-"angles" "0 1800 0"
-"weapons" "1"
-"m_imaxlivechildren" "2"
-"monstercount" "2"
-"monstertype" "monster_male_assassin"
-"new_body" "-1"
-"delay" "5"
-"targetname" "w.morenpcs1"
-"classname" "squadmaker"
-}
-{
-"origin" "1056 224 -1103"
-"angles" "90 -90 0"
-"targetname" "w.babyarrows3"
-"spawnflags" "0"
-"scale" "1"
-"framerate" "5"
-"vp_type" "4"
-"renderamt" "255"
-"rendermode" "5"
+"model" "*107"
+"brushmodel" "*107"
 "rendercolor" "0 0 0"
-"model" "sprites/tc/babyarrows.spr"
-"classname" "env_sprite"
+"classname" "func_healthcharger"
 }
 {
-"classname" "trigger_camera"
-"hud_weapons" "1"
-"hud_flashlight" "1"
-"hud_health" "1"
-"spawnflags" "332"
-"wait" "5"
-"angles" "0 0 0"
-"target" "w.camera1.t"
-"targetname" "w.camera1"
-"origin" "399 217 -963"
-}
-{
-"origin" "1409 226 -1056"
-"targetname" "w.camera1.t"
-"classname" "info_target"
-}
-{
-"classname" "trigger_camera"
-"hud_weapons" "1"
-"hud_flashlight" "1"
-"hud_health" "1"
-"spawnflags" "332"
-"wait" "5"
-"angles" "0 0 0"
-"target" "w.camera2.t"
-"targetname" "w.camera2"
-"origin" "64 1089 -993"
-}
-{
-"origin" "64 1596 -1107"
-"targetname" "w.camera2.t"
-"classname" "info_target"
-}
-{
-"origin" "-1263 -1272 -2029"
-"vp_type" "4"
-"angles" "0 180 0"
-"targetname" "w.useme2"
-"scale" ".1"
-"renderamt" "255"
-"rendermode" "4"
-"renderfx" "9"
-"framerate" "10.0"
+"model" "*108"
+"brushmodel" "*108"
 "rendercolor" "0 0 0"
-"model" "sprites/adamr/pointers/pointer-use.spr"
-"spawnflags" "1"
-"classname" "env_sprite"
+"classname" "func_healthcharger"
 }
 {
-"origin" "-567 -1664 -995"
-"vp_type" "4"
-"angles" "0 180 0"
-"targetname" "w.useme1"
-"scale" ".1"
-"renderamt" "255"
-"rendermode" "4"
-"renderfx" "9"
-"framerate" "10.0"
+"model" "*109"
+"brushmodel" "*109"
 "rendercolor" "0 0 0"
-"model" "sprites/adamr/pointers/pointer-use.spr"
-"spawnflags" "1"
-"classname" "env_sprite"
+"classname" "func_healthcharger"
 }
 {
-"origin" "-3341 -132 110"
-"health" "500"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
+"model" "*110"
+"brushmodel" "*110"
 "rendercolor" "0 0 0"
-"classname" "monster_human_grunt_ally"
+"classname" "func_healthcharger"
 }
 {
-"origin" "-3401 -22 110"
-"health" "500"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_human_medic_ally"
-}
-{
-"origin" "-3380 -127 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-3268 -127 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-3113 -127 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-3380 -13 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-3268 -13 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-3113 -13 110"
-"targetname" "spawn1"
-"angles" "0 0 0"
-"classname" "info_player_deathmatch"
-}
-
-{
-"origin" "363 -537 60"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "438 -537 110"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "513 -537 110"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "363 -612 110"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "438 -612 110"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "513 -612 110"
-"targetname" "spawn2"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-/////////////////////////  END RIPENT  /////////////////////////
-{
-"origin" "-2176 0 256"
-"_light" "255 255 128 200"
-"_fade" "1.0"
-"angles" "0 0 0"
-"classname" "light_environment"
-}
-{
-"model" "*1"
-"WaveHeight" "3.2"
-"skin" "-3"
-"renderamt" "200"
+"model" "*111"
+"brushmodel" "*111"
+"skin" "-1"
+"renderamt" "155"
 "rendermode" "2"
-"wait" "4"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*112"
+"brushmodel" "*112"
+"skin" "-1"
+"renderamt" "155"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*99"
+"brushmodel" "*99"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*100"
+"brushmodel" "*100"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*101"
+"brushmodel" "*101"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*102"
+"brushmodel" "*102"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*94"
+"brushmodel" "*94"
+"target" "secretdoorms"
+"wait" "1"
 "speed" "100"
 "angles" "0 0 0"
 "rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*3"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*4"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*5"
-"classname" "func_ladder"
-}
-{
-"model" "*6"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*7"
-"classname" "func_ladder"
-}
-{
-"model" "*8"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*9"
-"classname" "func_ladder"
-}
-{
-"model" "*10"
-"classname" "func_ladder"
-}
-{
-"model" "*11"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "-3008 -16 120"
-"message" "ambience/tankidle2.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "-2448 48 120"
-"message" "ambience/tankidle2.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "-2632 12 188"
-"message" "ambience/industrial2.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
 "spawnflags" "1"
-"classname" "ambient_generic"
+"classname" "func_button"
 }
 {
-"model" "*12"
-"lip" "5"
-"stopsnd" "5"
-"movesnd" "1"
+"model" "*95"
+"brushmodel" "*95"
+"target" "secretdoorms"
+"wait" "1"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_button"
+}
+{
+"model" "*96"
+"brushmodel" "*96"
+"targetname" "secret"
+"material" "8"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_breakable"
+}
+{
+"model" "*97"
+"brushmodel" "*97"
+"classname" "func_ladder"
+}
+{
+"model" "*98"
+"brushmodel" "*98"
 "renderamt" "255"
 "rendermode" "4"
-"fireonopening" "w.morenpcs1.r"
-"fireonopening_triggerstate" "1"
-"wait" "4"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*93"
+"brushmodel" "*93"
+"delay" "5"
+"lip" "10"
+"target" "detwall"
+"wait" "-1"
 "speed" "100"
 "angles" "90 0 0"
 "rendercolor" "0 0 0"
-"spawnflags" "256"
-"classname" "func_door"
-}
-{
-"origin" "0 0 0"
-"delay" "0"
-"target" "w.morenpcs1"
-"targetname" "w.morenpcs1.r"
-"triggerstate" "1"
-"spawnflags" "1"
-"classname" "trigger_relay"
-}
-{
-"model" "*13"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*14"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "1104 -64 112"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "720 -64 112"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "720 -1024 112"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1104 -1024 112"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"model" "*15"
-"lip" "-1"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*16"
-"lip" "-1"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*17"
-"lip" "-1"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*18"
-"lip" "-1"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"origin" "1232 -576 304"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "912 -1184 304"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1136 96 304"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "352 -1184 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "776 64 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1136 321 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1239 -1488 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1472 -1184 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1472 64 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1472 -576 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "768 -1704 320"
-"_fade" "1.0"
-"_light" "255 255 255 75"
-"classname" "light"
-}
-{
-"origin" "896 -1704 200"
-"_fade" "1.0"
-"_light" "255 255 255 75"
-"classname" "light"
-}
-{
-"model" "*19"
-"health" "15"
-"renderamt" "55"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_breakable"
-}
-{
-"model" "*20"
-"stopsnd" "5"
-"movesnd" "1"
-"wait" "4"
-"speed" "100"
-"angles" "-90 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*21"
-"health" "15"
-"renderamt" "55"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_breakable"
-}
-{
-"origin" "352 -200 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "577 -744 344"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "528 -112 288"
-"body" "-1"
-"angles" "0 325 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "528 -16 288"
-"pose" "1"
-"body" "-1"
-"angles" "0 47 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "976 -624 240"
-"pose" "2"
-"body" "-1"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "584 1184 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "496 672 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1072 2272 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "496 2272 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "880 2552 240"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "688 2552 240"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "720 1520 240"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "464 968 240"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "520 928 400"
-"orientation" "1"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "672 1696 400"
-"orientation" "1"
-"health" "100"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"model" "*23"
-"lip" "-5"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*24"
-"lip" "-5"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*25"
-"lip" "-5"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*26"
-"lip" "-5"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*27"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*28"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*29"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*30"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*31"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*32"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*33"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*34"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*35"
-"rendermode" "2"
-"renderamt" "70"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*36"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*37"
-"classname" "func_ladder"
-}
-{
-"origin" "816 2912 240"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 194 0"
-"rendercolor" "0 0 0"
-"spawnflags" "16"
-"classname" "monster_gman"
-}
-{
-"origin" "752 2912 240"
-"weapons" "32"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 338 0"
-"rendercolor" "0 0 0"
-"spawnflags" "18"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "944 3008 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "624 3008 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "968 2664 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1288 2664 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "288 2664 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "608 2664 320"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "464 2624 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "592 2624 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "1104 2624 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "976 2624 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "1040 2712 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "784 2712 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"origin" "528 2712 264"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "monster_tripmine"
-}
-{
-"model" "*38"
-"renderamt" "255"
-"rendermode" "4"
-"material" "2"
-"health" "25"
-"rendercolor" "0 0 0"
-"classname" "func_breakable"
-}
-{
-"model" "*39"
-"renderamt" "255"
-"rendermode" "4"
-"material" "2"
-"health" "10"
-"rendercolor" "0 0 0"
-"classname" "func_breakable"
-}
-{
-"model" "*40"
-"renderamt" "85"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*41"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*42"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "1808 3296 240"
-"_fade" "1.0"
-"_light" "47 225 43 200"
-"classname" "light"
-}
-{
-"origin" "1808 3168 240"
-"_fade" "1.0"
-"_light" "47 225 43 200"
-"classname" "light"
-}
-{
-"model" "*43"
-"WaveHeight" "3.2"
-"skin" "-5"
-"dmg" "20"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"origin" "1808 2656 240"
-"_fade" "1.0"
-"_light" "47 225 43 200"
-"classname" "light"
-}
-{
-"origin" "1808 2528 240"
-"_fade" "1.0"
-"_light" "47 225 43 200"
-"classname" "light"
-}
-{
-"model" "*44"
-"WaveHeight" "3.2"
-"skin" "-5"
-"dmg" "20"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*45"
-"classname" "func_ladder"
-}
-{
-"model" "*46"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*47"
-"target" "t1_trigger"
-"wait" "-1"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
+"spawnflags" "64"
 "classname" "func_button"
 }
 {
-"model" "*48"
-"master" "t1_master"
-"target" "t1_dest"
-"classname" "trigger_teleport"
+"model" "*92"
+"brushmodel" "*92"
+"damagetype" "32"
+"dmg" "200"
+"classname" "trigger_hurt"
 }
 {
-"origin" "1616 2904 408"
-"targetname" "t1_master"
-"classname" "multisource"
-}
-{
-"origin" "1616 2880 408"
-"t1_master" "0"
-"targetname" "t1_trigger"
-"classname" "multi_manager"
-}
-{
-"origin" "1800 2904 408"
-"targetname" "t1_trigger"
-"renderamt" "255"
-"rendermode" "5"
-"model" "sprites/c-tele1.spr"
-"framerate" "10.0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "env_sprite"
-}
-{
-"origin" "1800 2904 392"
-"targetname" "t1_trigger"
-"message" "ambience/particle_suck1.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "17"
-"classname" "ambient_generic"
-}
-{
-"origin" "1800 2904 424"
-"targetname" "t1_trigger"
-"fadein" "2"
-"message" "ambience/zapmachine.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "24"
-"classname" "ambient_generic"
-}
-{
-"origin" "1850 2824 427"
-"texture" "{ROTATESCRAPE"
-"classname" "infodecal"
-}
-{
-"style" "32"
-"origin" "1800 2904 444"
-"targetname" "t1_trigger"
-"_fade" "1.0"
-"_light" "112 225 43 200"
-"spawnflags" "1"
-"classname" "light"
-}
-{
-"origin" "1800 2600 264"
-"targetname" "t1_trigger"
-"message" "Teletransportador inicializado... felicitaciones."
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "5"
-"fadeout" "0.5"
-"fadein" "1.5"
-"color2" "240 110 0"
-"color" "100 100 100"
-"y" ".6"
-"x" "-1"
-"spawnflags" "1"
-"classname" "game_text"
-}
-{
-"origin" "320 480 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1216 224 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 1296 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 -848 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"model" "*49"
-"renderamt" "150"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*50"
-"renderamt" "150"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*51"
-"renderamt" "150"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "-316 -1344 -992"
-"_fade" "1.0"
-"_light" "255 255 255 300"
-"classname" "light"
-}
-{
-"origin" "-316 -1648 -992"
-"_fade" "1.0"
-"_light" "255 255 255 300"
-"classname" "light"
-}
-{
-"origin" "608 -1648 -992"
-"_fade" "1.0"
-"_light" "255 255 255 300"
-"classname" "light"
-}
-{
-"origin" "608 -1348 -992"
-"_fade" "1.0"
-"_light" "255 255 255 300"
-"classname" "light"
-}
-{
-"model" "*52"
-"lip" "-5"
-"stopsnd" "6"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "-90 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"origin" "960 224 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 -672 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 1056 -1032"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-192 480 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "320 -32 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-192 -32 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"model" "*53"
-"renderamt" "150"
-"rendermode" "2"
-"WaveHeight" "3.2"
-"skin" "-3"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*54"
-"locked_sound" "2"
-"targetname" "door1"
-"lip" "-5"
-"stopsnd" "6"
-"movesnd" "2"
-"wait" "-1"
-"speed" "100"
-"angles" "-90 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "512"
-"classname" "func_door"
-}
-{
-"model" "*55"
-"target" "door1ms"
-"wait" "1"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "func_button"
-}
-{
-"model" "*56"
-"target" "door1ms"
-"wait" "1"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "func_button"
-}
-{
-"model" "*57"
-"buoyancy" "20"
-"friction" "50"
-"rendercolor" "0 0 0"
-"classname" "func_pushable"
-}
-{
-"origin" "64 112 -1048"
-"message" "ambience/waterfall2.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"model" "*58"
+"model" "*91"
+"brushmodel" "*91"
 "renderamt" "255"
 "rendermode" "4"
-"material" "2"
-"health" "20"
 "rendercolor" "0 0 0"
-"target" "w.morenpcs3"
-"displayname" "Rejilla"
-"spawnflags" "288"
+"classname" "func_wall"
+}
+{
+"model" "*84"
+"brushmodel" "*84"
+"skin" "-1"
+"renderamt" "255"
+"rendermode" "4"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*85"
+"brushmodel" "*85"
+"skin" "-1"
+"renderamt" "255"
+"rendermode" "4"
+"rendercolor" "0 0 0"
+"classname" "func_illusionary"
+}
+{
+"model" "*90"
+"brushmodel" "*90"
+"classname" "func_monsterclip"
+}
+{
+"model" "*83"
+"brushmodel" "*83"
+"renderamt" "150"
+"rendermode" "2"
+"speed" "100"
+"angles" "90 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "2"
+"classname" "func_conveyor"
+}
+{
+"model" "*81"
+"brushmodel" "*81"
+"target" "spawn3"
+"classname" "trigger_once"
+}
+{
+"model" "*82"
+"brushmodel" "*82"
+"target" "spawn2"
+"classname" "trigger_once"
+}
+{
+"model" "*79"
+"brushmodel" "*79"
+"targetname" "detwall"
+"material" "4"
+"health" "1"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
 "classname" "func_breakable"
 }
 {
-"origin" "64 -1100 -892"
-"style" "10"
-"_fade" "1.0"
-"_light" "248 7 7 100"
-"classname" "light"
-}
-{
-"model" "*59"
-"targetname" "door21"
-"lip" "-5"
-"stopsnd" "6"
-"movesnd" "2"
-"wait" "4"
-"speed" "100"
-"angles" "-90 0 0"
+"model" "*80"
+"brushmodel" "*80"
+"health" "1"
+"material" "1"
 "rendercolor" "0 0 0"
-"classname" "func_door"
-}
-{
-"model" "*60"
-"target" "door21"
-"wait" "4"
-"classname" "trigger_multiple"
-}
-{
-"model" "*61"
-"rendermode" "4"
-"renderamt" "255"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*62"
-"classname" "func_ladder"
-}
-{
-"origin" "1520 240 -2016"
-"_light" "255 255 128 200"
-"_fade" "1.0"
-"angles" "0 0 0"
-"classname" "light_environment"
-}
-{
-"origin" "1520 -504 -2016"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "2248 240 -2016"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "1520 -1160 -2016"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "792 -1888 -2016"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "2392 224 -968"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "1824 224 -968"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"model" "*63"
-"WaveHeight" "3.2"
-"skin" "-3"
-"renderamt" "150"
-"rendermode" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*64"
-"rendermode" "2"
-"renderamt" "150"
-"rendercolor" "0 0 0"
+"spawnflags" "262"
 "classname" "func_breakable"
 }
 {
-"model" "*65"
-"renderamt" "150"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_breakable"
+"model" "*78"
+"brushmodel" "*78"
+"target" "weakwall"
+"classname" "trigger_once"
 }
 {
-"model" "*66"
-"origin" "-1132 -1244 -2064"
-"distance" "90"
-"movesnd" "9"
-"rendermode" "4"
-"renderamt" "255"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_door_rotating"
-}
-{
-"origin" "-192 -1440 -2048"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "-1112 -1440 -2048"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "-1200 -1280 -2000"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "-848 -1440 -2048"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "64 -1440 -2048"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "320 -1888 -2016"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "1520 -1888 -2016"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "1520 240 -2016"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "2352 224 -2016"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "1520 -832 -2016"
-"message" "ambience/drips.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"model" "*67"
-"renderamt" "150"
-"rendermode" "2"
-"WaveHeight" "3.2"
-"skin" "-3"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*68"
-"renderamt" "150"
-"rendermode" "2"
-"WaveHeight" "3.2"
-"skin" "-3"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*69"
-"renderamt" "150"
-"rendermode" "2"
-"WaveHeight" "3.2"
-"skin" "-3"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"model" "*70"
-"WaveHeight" "3.2"
-"skin" "-3"
-"renderamt" "150"
-"rendermode" "2"
-"wait" "4"
-"speed" "100"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "func_water"
-}
-{
-"origin" "-1232 -1792 -1856"
-"classify" "4"
-"health" "250"
-"weapons" "10"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "-1232 -1984 -1856"
-"classify" "4"
-"health" "250"
-"weapons" "8"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "104 -1392 -904"
-"target" "door1"
-"targetname" "door1ms"
-"classname" "multisource"
-}
-{
-"model" "*71"
-"target" "door2"
-"killtarget" "w.useme1"
-"delay" "1"
+"model" "*75"
+"brushmodel" "*75"
+"target" "door33"
+"killtarget" "w.useme2"
 "sounds" "3"
 "wait" "-1"
+"delay" "1"
 "speed" "100"
 "angles" "0 0 0"
 "rendercolor" "0 0 0"
@@ -2286,13 +285,20 @@
 "classname" "func_button"
 }
 {
-"origin" "-560 -1664 -1024"
-"_fade" "1.0"
-"_light" "28 16 252 100"
-"classname" "light"
+"model" "*76"
+"brushmodel" "*76"
+"dmg" "500"
+"classname" "trigger_hurt"
+}
+{
+"model" "*74"
+"brushmodel" "*74"
+"target" "turret2"
+"classname" "trigger_once"
 }
 {
 "model" "*72"
+"brushmodel" "*72"
 "locked_sound" "2"
 "targetname" "door2"
 "fireonopening" "w.camera1"
@@ -2311,13 +317,11 @@
 }
 {
 "model" "*73"
+"brushmodel" "*73"
 "locked_sound" "2"
 "targetname" "door33"
-"target" "w.morenpcs4"
-"fireonopening" "w.camera2"
+"fireonopening" "w.morenpcs4.mm"
 "fireonopening_triggerstate" "1"
-"fireonopened" "w.babyarrows3"
-"fireonopened_triggerstate" "0"
 "lip" "-5"
 "stopsnd" "6"
 "movesnd" "2"
@@ -2329,119 +333,13 @@
 "classname" "func_door"
 }
 {
-"origin" "64 2640 -904"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-32 2264 -936"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "168 2264 -936"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "512 1792 -992"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 1792 -992"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-384 1792 -992"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-8 2824 -912"
-"_fade" "1.0"
-"_light" "30 14 220 100"
-"classname" "light"
-}
-{
-"origin" "152 2824 -912"
-"_fade" "1.0"
-"_light" "30 14 220 100"
-"classname" "light"
-}
-{
-"model" "*74"
-"target" "turret2"
-"classname" "trigger_once"
-}
-{
-"origin" "-48 2440 -832"
-"orientation" "1"
-"targetname" "turret2"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "64"
-"classname" "monster_turret"
-}
-{
-"origin" "184 2440 -832"
-"orientation" "1"
-"targetname" "turret1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "64"
-"classname" "monster_turret"
-}
-{
-"origin" "-48 2352 -832"
-"orientation" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "184 2352 -832"
-"orientation" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "1248 512 -1992"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"origin" "1824 -2176 -2008"
-"_light" "255 255 255 200"
-"_fade" "1.0"
-"classname" "light"
-}
-{
-"model" "*75"
-"target" "door33"
-"killtarget" "w.useme2"
+"model" "*71"
+"brushmodel" "*71"
+"target" "door2"
+"killtarget" "w.useme1"
+"delay" "1"
 "sounds" "3"
 "wait" "-1"
-"delay" "1"
 "speed" "100"
 "angles" "0 0 0"
 "rendercolor" "0 0 0"
@@ -2449,1961 +347,4535 @@
 "classname" "func_button"
 }
 {
-"model" "*76"
-"dmg" "500"
-"classname" "trigger_hurt"
-}
-{
-"origin" "-1832 168 -1072"
-"renderamt" "150"
-"rendermode" "5"
-"renderfx" "14"
-"model" "sprites/portal1.spr"
-"framerate" "10.0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "env_sprite"
-}
-{
-"origin" "-1832 224 -1072"
-"message" "ambience/zapmachine.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
-}
-{
-"origin" "-1728 224 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "-864 224 -1024"
-"_fade" "1.0"
-"_light" "255 255 255 200"
-"classname" "light"
-}
-{
-"origin" "64 120 -952"
-"targetname" "t1_dest"
-"angles" "0 270 0"
-"classname" "info_teleport_destination"
-}
-{
-"origin" "-1832 280 -1072"
-"renderamt" "150"
-"rendermode" "5"
-"renderfx" "14"
-"model" "sprites/portal1.spr"
-"framerate" "10.0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "env_sprite"
-}
-{
-"origin" "-1832 112 -880"
-"targetname" "w.theend"
-"classname" "game_end"
-}
-{
-"model" "*78"
-"target" "weakwall"
-"classname" "trigger_once"
-}
-{
-"origin" "-576 200 -1008"
-"message" "Tienes que encontrar el detonador para destruir este muro"
-"targetname" "weakwall"
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "1.2"
-"fadeout" "0.5"
-"fadein" "1.5"
-"color2" "240 110 0"
-"color" "100 100 100"
-"y" ".6"
-"x" "-1"
-"spawnflags" "1"
-"classname" "game_text"
-}
-{
-"model" "*79"
-"targetname" "detwall"
-"material" "4"
-"health" "1"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "func_breakable"
-}
-{
-"model" "*80"
-"health" "1"
-"material" "1"
-"rendercolor" "0 0 0"
-"spawnflags" "262"
-"classname" "func_breakable"
-}
-{
-"origin" "-1984 112 112"
-"classify" "4"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 181 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "-1696 -112 112"
-"classify" "4"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 181 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "-1456 112 96"
-"classify" "4"
-"netname" "monster_male_assassin"
-"monstertype" "monster_male_assassin"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"weapons" "1"
-"gag" "-1"
-"notsolid" "-1"
-"new_body" "-1"
-"m_imaxlivechildren" "5"
-"delay" "10"
-"monstercount" "5"
-"rendercolor" "0 0 0"
-"angles" "0 180 0"
-"spawnflags" "1"
-"classname" "squadmaker"
-}
-{
-"origin" "-448 672 64"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 315 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "-768 -448 64"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 45 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "1392 48 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 199 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1360 -368 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 199 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1360 -880 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 199 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1360 -1376 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 199 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "448 -1376 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 139 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "448 -880 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 139 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "432 -320 48"
-"health" "200"
-"weapons" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 139 0"
-"rendercolor" "0 0 0"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "896 -1600 352"
-"rendercolor" "0 0 0"
-"classname" "monster_barnacle"
-}
-{
-"origin" "896 -1792 352"
-"rendercolor" "0 0 0"
-"classname" "monster_barnacle"
-}
-{
-"origin" "768 -1792 352"
-"rendercolor" "0 0 0"
-"classname" "monster_barnacle"
-}
-{
-"origin" "768 -1600 352"
-"rendercolor" "0 0 0"
-"classname" "monster_barnacle"
-}
-{
-"origin" "555 -118 288"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
-}
-{
-"origin" "525 -40 288"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
-}
-{
-"origin" "-800 -326 125"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "-327 -480 118"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "272 -230 127"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "960 -560 240"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_slave"
-}
-{
-"origin" "1152 -560 240"
-"health" "250"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "1312 -560 240"
-"health" "250"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "480 -624 240"
-"health" "250"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "640 -624 240"
-"health" "250"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "464 144 272"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_slave"
-}
-{
-"origin" "640 32 288"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_slave"
-}
-{
-"origin" "1808 3232 560"
-"health" "150"
-"orientation" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 231 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "1800 2904 560"
-"classify" "4"
-"health" "150"
-"orientation" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "1800 2600 560"
-"health" "150"
-"orientation" "1"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 121 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "-8 -232 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "152 -232 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "-8 528 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "152 528 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_grunt"
-}
-{
-"origin" "-320 248 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_slave"
-}
-{
-"origin" "-320 304 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_zombie"
-}
-{
-"origin" "384 312 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_zombie_soldier"
-}
-{
-"origin" "384 256 -1056"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_alien_slave"
-}
-{
-"origin" "64 -1256 -832"
-"orientation" "1"
-"classify" "5"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "608 -1696 -1088"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 180 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_turret"
-}
-{
-"origin" "1824 384 -1072"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 271 0"
-"rendercolor" "0 0 0"
-"classname" "monster_gonome"
-}
-{
-"origin" "1824 48 -1072"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 271 0"
-"rendercolor" "0 0 0"
-"classname" "monster_gonome"
-}
-{
-"origin" "2152 24 -2080"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1880 32 -2080"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1880 408 -2080"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "2152 400 -2080"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1216 -32 -2104"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1216 232 -2104"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 0 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1304 464 -2112"
-"classify" "4"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 318 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "1328 -728 -2104"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1720 -1128 -2104"
-"classify" "4"
-"health" "250"
-"weapons" "3"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 92 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1320 -1520 -2104"
-"classify" "4"
-"health" "250"
-"weapons" "8"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 92 0"
-"rendercolor" "0 0 0"
-"spawnflags" "4"
-"classname" "monster_male_assassin"
-}
-{
-"origin" "1768 -2096 -2112"
-"classify" "4"
-"health" "150"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 121 0"
-"rendercolor" "0 0 0"
-"spawnflags" "32"
-"classname" "monster_sentry"
-}
-{
-"origin" "1006 -2128 -2046"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "1392 -2272 -2064"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "1888 -1725 -2061"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "1280 -999 -2065"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "1760 -723 -2066"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "1671 608 -2064"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "2058 -16 -2051"
-"texture" "{VINE1"
-"classname" "infodecal"
-}
-{
-"origin" "-1984 -64 128"
-"classname" "info_node"
-}
-{
-"origin" "-1984 112 124"
-"classname" "info_node"
-}
-{
-"origin" "-1712 -104 124"
-"classname" "info_node"
-}
-{
-"origin" "-1456 112 124"
-"classname" "info_node"
-}
-{
-"origin" "-1208 -16 124"
-"classname" "info_node"
-}
-{
-"origin" "-2144 8 124"
-"classname" "info_node"
-}
-{
-"origin" "-2144 -48 124"
-"classname" "info_node"
-}
-{
-"origin" "-2200 -48 124"
-"classname" "info_node"
-}
-{
-"origin" "-2528 0 124"
-"classname" "info_node"
-}
-{
-"origin" "-2960 96 124"
-"classname" "info_node"
-}
-{
-"origin" "536 -352 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -296 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -352 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -864 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -808 100"
-"classname" "info_node"
-}
-{
-"origin" "536 -864 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -1344 100"
-"classname" "info_node"
-}
-{
-"origin" "592 -1288 100"
-"classname" "info_node"
-}
-{
-"origin" "536 -1344 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 168 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 224 100"
-"classname" "info_node"
-}
-{
-"origin" "1304 224 100"
-"classname" "info_node"
-}
-{
-"origin" "1304 -224 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -224 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -280 100"
-"classname" "info_node"
-}
-{
-"origin" "1304 -736 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -736 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -792 100"
-"classname" "info_node"
-}
-{
-"origin" "1304 -1216 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -1216 100"
-"classname" "info_node"
-}
-{
-"origin" "1360 -1272 100"
-"classname" "info_node"
-}
-{
-"origin" "936 -1296 100"
-"classname" "info_node"
-}
-{
-"origin" "928 -784 100"
-"classname" "info_node"
-}
-{
-"origin" "936 -288 100"
-"classname" "info_node"
-}
-{
-"origin" "1264 -600 252"
-"classname" "info_node"
-}
-{
-"origin" "1272 -104 252"
-"classname" "info_node"
-}
-{
-"origin" "1272 -1112 252"
-"classname" "info_node"
-}
-{
-"origin" "640 176 252"
-"classname" "info_node"
-}
-{
-"origin" "632 -320 252"
-"classname" "info_node"
-}
-{
-"origin" "400 168 252"
-"classname" "info_node"
-}
-{
-"origin" "416 -272 252"
-"classname" "info_node"
-}
-{
-"origin" "-336 176 -1024"
-"classname" "info_node"
-}
-{
-"origin" "72 520 -1028"
-"classname" "info_node"
-}
-{
-"origin" "448 224 -1028"
-"classname" "info_node"
-}
-{
-"origin" "72 -232 -1028"
-"classname" "info_node"
-}
-{
-"origin" "64 -840 -1028"
-"classname" "info_node"
-}
-{
-"origin" "64 1296 -1028"
-"classname" "info_node"
-}
-{
-"origin" "1056 224 -1028"
-"classname" "info_node"
-}
-{
-"origin" "1840 224 -1028"
-"classname" "info_node"
-}
-{
-"origin" "64 -1440 -1064"
-"classify" "5"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"classname" "monster_gonome"
-}
-{
-"origin" "80 -1264 -1020"
-"classname" "info_node"
-}
-{
-"origin" "2144 72 -2008"
-"classname" "info_node"
-}
-{
-"origin" "2144 400 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1872 408 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1872 56 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1536 216 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1216 240 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1208 -24 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1208 112 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1328 -736 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1720 -1128 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1320 -1520 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1544 0 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1544 -432 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1544 -864 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1544 -1288 -1988"
-"classname" "info_node"
-}
-{
-"origin" "1544 -1720 -1988"
-"classname" "info_node"
-}
-{
-"origin" "544 -64 288"
-"angles" "0 0 0"
-"classname" "weapon_handgrenade"
-}
-{
-"origin" "512 -64 288"
-"angles" "0 0 0"
-"classname" "weapon_handgrenade"
-}
-{
-"origin" "-400 128 -984"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-400 240 -988"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "-400 352 -988"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "496 128 -980"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "496 240 -984"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "496 352 -984"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 704 -1000"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 816 -1004"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 928 -1004"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 -880 -1000"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 -768 -1004"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"origin" "64 -656 -1004"
-"targetname" "spawn3"
-"angles" "0 0 0"
-"spawnflags" "2"
-"classname" "info_player_deathmatch"
-}
-{
-"model" "*81"
-"target" "spawn3"
-"classname" "trigger_once"
-}
-{
-"model" "*82"
-"target" "spawn2"
-"classname" "trigger_once"
-}
-{
-"origin" "1216 2896 512"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 270 0"
-"rendercolor" "0 0 0"
-"classname" "monster_headcrab"
-}
-{
-"model" "*83"
+"model" "*67"
+"brushmodel" "*67"
 "renderamt" "150"
 "rendermode" "2"
+"WaveHeight" "3.2"
+"skin" "-3"
+"wait" "4"
 "speed" "100"
-"angles" "90 0 0"
+"angles" "0 0 0"
 "rendercolor" "0 0 0"
-"spawnflags" "2"
-"classname" "func_conveyor"
+"classname" "func_water"
 }
 {
-"origin" "-3296 0 -248"
-"message" "ambience/waterfall3.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "8"
-"classname" "ambient_generic"
+"model" "*68"
+"brushmodel" "*68"
+"renderamt" "150"
+"rendermode" "2"
+"WaveHeight" "3.2"
+"skin" "-3"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
 }
 {
-"model" "*84"
-"skin" "-1"
-"renderamt" "255"
+"model" "*69"
+"brushmodel" "*69"
+"renderamt" "150"
+"rendermode" "2"
+"WaveHeight" "3.2"
+"skin" "-3"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"model" "*70"
+"brushmodel" "*70"
+"WaveHeight" "3.2"
+"skin" "-3"
+"renderamt" "150"
+"rendermode" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"model" "*63"
+"brushmodel" "*63"
+"WaveHeight" "3.2"
+"skin" "-3"
+"renderamt" "150"
+"rendermode" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"model" "*64"
+"brushmodel" "*64"
+"rendermode" "2"
+"renderamt" "150"
+"rendercolor" "0 0 0"
+"classname" "func_breakable"
+}
+{
+"model" "*65"
+"brushmodel" "*65"
+"renderamt" "150"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_breakable"
+}
+{
+"model" "*66"
+"brushmodel" "*66"
+"origin" "-1132 -1244 -2064"
+"distance" "90"
+"movesnd" "9"
 "rendermode" "4"
-"rendercolor" "0 0 0"
-"classname" "func_illusionary"
-}
-{
-"model" "*85"
-"skin" "-1"
 "renderamt" "255"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door_rotating"
+}
+{
+"model" "*59"
+"brushmodel" "*59"
+"targetname" "door21"
+"lip" "-5"
+"stopsnd" "6"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "-90 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*60"
+"brushmodel" "*60"
+"target" "door21"
+"wait" "4"
+"classname" "trigger_multiple"
+}
+{
+"model" "*61"
+"brushmodel" "*61"
 "rendermode" "4"
-"rendercolor" "0 0 0"
-"classname" "func_illusionary"
-}
-{
-"model" "*86"
-"rendercolor" "0 0 0"
-"classname" "func_healthcharger"
-}
-{
-"model" "*89"
-"rendercolor" "0 0 0"
-"classname" "func_healthcharger"
-}
-{
-"model" "*90"
-"classname" "func_monsterclip"
-}
-{
-"origin" "2528 376 -1920"
-"angles" "0 271 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "2528 336 -1920"
-"angles" "0 271 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "2488 376 -1920"
-"angles" "0 271 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "2488 336 -1920"
-"angles" "0 271 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "2488 72 -1920"
-"angles" "0 271 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "2528 72 -1920"
-"angles" "0 271 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "2528 112 -1920"
-"angles" "0 271 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "2488 112 -1920"
-"angles" "0 271 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "2416 92 -1920"
-"angles" "0 271 0"
-"classname" "weapon_handgrenade"
-}
-{
-"origin" "2416 356 -1920"
-"angles" "0 271 0"
-"classname" "weapon_handgrenade"
-}
-{
-"model" "*91"
 "renderamt" "255"
-"rendermode" "4"
 "rendercolor" "0 0 0"
 "classname" "func_wall"
 }
 {
-"origin" "784 1872 304"
-"style" "10"
-"_fade" "1.0"
-"_light" "240 47 47 100"
-"classname" "light"
+"model" "*62"
+"brushmodel" "*62"
+"classname" "func_ladder"
 }
 {
-"origin" "784 1568 304"
-"_fade" "1.0"
-"_light" "240 47 47 100"
-"classname" "light"
-}
-{
-"origin" "784 1712 304"
-"_fade" "1.0"
-"_light" "68 50 228 100"
-"classname" "light"
-}
-{
-"origin" "784 1872 304"
-"angles" "0 0 0"
-"classname" "env_spark"
-}
-{
-"model" "*92"
-"damagetype" "32"
-"dmg" "200"
-"classname" "trigger_hurt"
-}
-{
-"origin" "-128 -1712 -2224"
-"classify" "4"
-"sound" "-1"
-"sweeparc" "130"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
+"model" "*58"
+"brushmodel" "*58"
+"renderamt" "255"
+"rendermode" "4"
+"material" "2"
+"health" "20"
 "rendercolor" "0 0 0"
-"classname" "monster_tentacle"
+"target" "w.morenpcs3"
+"displayname" "Reja"
+"spawnflags" "288"
+"classname" "func_breakable"
 }
 {
-"origin" "-992 -1704 -2224"
-"classify" "4"
-"sound" "-1"
-"sweeparc" "130"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
+"model" "*53"
+"brushmodel" "*53"
+"renderamt" "150"
+"rendermode" "2"
+"WaveHeight" "3.2"
+"skin" "-3"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
 "rendercolor" "0 0 0"
-"classname" "monster_tentacle"
+"classname" "func_water"
 }
 {
-"origin" "2432 224 -1824"
-"_fade" "1.0"
-"_light" "255 255 255 75"
-"classname" "light"
-}
-{
-"origin" "2432 224 -2056"
-"_fade" "1.0"
-"_light" "255 255 255 75"
-"classname" "light"
-}
-{
-"origin" "984 -1696 -2112"
-"angles" "0 89 0"
-"classname" "weapon_sniperrifle"
-}
-{
-"origin" "984 -2088 -2112"
-"angles" "0 89 0"
-"classname" "weapon_sniperrifle"
-}
-{
-"origin" "1016 -2072 -2112"
-"rendercolor" "0 0 0"
-"angles" "0 89 0"
-"classname" "ammo_762"
-}
-{
-"origin" "1016 -2104 -2112"
-"rendercolor" "0 0 0"
-"angles" "0 89 0"
-"classname" "ammo_762"
-}
-{
-"origin" "1016 -1712 -2112"
-"rendercolor" "0 0 0"
-"angles" "0 89 0"
-"classname" "ammo_762"
-}
-{
-"origin" "1016 -1680 -2112"
-"rendercolor" "0 0 0"
-"angles" "0 89 0"
-"classname" "ammo_762"
-}
-{
-"origin" "-1248 -1272 -2056"
-"targetname" "door33"
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "1.2"
-"fadeout" "0.5"
-"fadein" "1.5"
-"color2" "240 110 0"
-"color" "100 100 100"
-"y" ".6"
-"x" "-1"
-"message" "Se ha abierto una puerta en el vestibulo"
-"spawnflags" "1"
-"classname" "game_text"
-}
-{
-"origin" "-544 -1664 -1024"
-"targetname" "door2"
-"channel" "1"
-"fxtime" "0.25"
-"holdtime" "1.2"
-"fadeout" "0.5"
-"fadein" "1.5"
-"color2" "240 110 0"
-"color" "100 100 100"
-"y" ".6"
-"x" "-1"
-"message" "Se ha abierto una puerta en el vestibulo"
-"spawnflags" "1"
-"classname" "game_text"
-}
-{
-"origin" "64 1296 -1056"
-"angles" "0 0 0"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"health" "2000"
-"displayname" "ZOMG UNA GARG!!!!"
-"weapons" "1"
-"gag" "-1"
-"notsolid" "-1"
-"classify" "4"
-"new_body" "-1"
-"m_imaxlivechildren" "1"
-"delay" "1"
-"monstercount" "1"
-"rendercolor" "0 0 255"
-"renderfx" "19"
-"targetname" "turret2"
-"monstertype" "monster_gargantua"
-"classname" "squadmaker"
-}
-{
-"origin" "64 1296 -1008"
-"targetname" "turret2"
-"message" "ambience/particle_suck1.wav"
-"pitchstart" "100"
-"pitch" "100"
-"health" "10"
-"spawnflags" "17"
-"classname" "ambient_generic"
-}
-{
-"origin" "-256 672 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "-208 672 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "-112 696 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-160 696 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-112 648 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-160 648 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "240 696 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "288 696 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "288 648 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "240 648 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "336 672 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "384 672 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "240 -208 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "288 -208 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "288 -256 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "240 -256 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "336 -232 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "384 -232 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "-256 -232 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "-208 -232 -1056"
-"angles" "0 0 0"
-"classname" "ammo_9mmbox"
-}
-{
-"origin" "-160 -208 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-112 -208 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-112 -256 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"origin" "-160 -256 -1056"
-"angles" "0 0 0"
-"classname" "ammo_buckshot"
-}
-{
-"model" "*93"
-"delay" "5"
-"lip" "10"
-"target" "detwall"
+"model" "*54"
+"brushmodel" "*54"
+"locked_sound" "2"
+"targetname" "door1"
+"lip" "-5"
+"stopsnd" "6"
+"movesnd" "2"
 "wait" "-1"
+"speed" "100"
+"angles" "-90 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "512"
+"classname" "func_door"
+}
+{
+"model" "*55"
+"brushmodel" "*55"
+"target" "door1ms"
+"wait" "1"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_button"
+}
+{
+"model" "*56"
+"brushmodel" "*56"
+"target" "door1ms"
+"wait" "1"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_button"
+}
+{
+"model" "*57"
+"brushmodel" "*57"
+"buoyancy" "20"
+"friction" "50"
+"rendercolor" "0 0 0"
+"classname" "func_pushable"
+}
+{
+"model" "*52"
+"brushmodel" "*52"
+"lip" "-5"
+"stopsnd" "6"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "-90 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*49"
+"brushmodel" "*49"
+"renderamt" "150"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*50"
+"brushmodel" "*50"
+"renderamt" "150"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*51"
+"brushmodel" "*51"
+"renderamt" "150"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*44"
+"brushmodel" "*44"
+"WaveHeight" "3.2"
+"skin" "-5"
+"dmg" "20"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"model" "*45"
+"brushmodel" "*45"
+"classname" "func_ladder"
+}
+{
+"model" "*46"
+"brushmodel" "*46"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*47"
+"brushmodel" "*47"
+"target" "t1_trigger"
+"wait" "-1"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"spawnflags" "1"
+"classname" "func_button"
+}
+{
+"model" "*48"
+"brushmodel" "*48"
+"master" "t1_master"
+"target" "t1_dest"
+"classname" "trigger_teleport"
+}
+{
+"model" "*43"
+"brushmodel" "*43"
+"WaveHeight" "3.2"
+"skin" "-5"
+"dmg" "20"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_water"
+}
+{
+"model" "*38"
+"brushmodel" "*38"
+"renderamt" "255"
+"rendermode" "4"
+"material" "2"
+"health" "25"
+"rendercolor" "0 0 0"
+"classname" "func_breakable"
+}
+{
+"model" "*39"
+"brushmodel" "*39"
+"renderamt" "255"
+"rendermode" "4"
+"material" "2"
+"health" "10"
+"target" "w.name.bgm"
+"killtarget" "w.maze.bgm"
+"classname" "func_breakable"
+}
+{
+"model" "*40"
+"brushmodel" "*40"
+"renderamt" "85"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*41"
+"brushmodel" "*41"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*42"
+"brushmodel" "*42"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*23"
+"brushmodel" "*23"
+"lip" "-5"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*24"
+"brushmodel" "*24"
+"lip" "-5"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*25"
+"brushmodel" "*25"
+"lip" "-5"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*26"
+"brushmodel" "*26"
+"lip" "-5"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*27"
+"brushmodel" "*27"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*28"
+"brushmodel" "*28"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*29"
+"brushmodel" "*29"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*30"
+"brushmodel" "*30"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*31"
+"brushmodel" "*31"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*32"
+"brushmodel" "*32"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*33"
+"brushmodel" "*33"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*34"
+"brushmodel" "*34"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*35"
+"brushmodel" "*35"
+"rendermode" "2"
+"renderamt" "70"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*36"
+"brushmodel" "*36"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*37"
+"brushmodel" "*37"
+"classname" "func_ladder"
+}
+{
+"model" "*19"
+"brushmodel" "*19"
+"health" "15"
+"renderamt" "55"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_breakable"
+}
+{
+"model" "*20"
+"brushmodel" "*20"
+"stopsnd" "5"
+"movesnd" "1"
+"wait" "4"
+"speed" "100"
+"angles" "-90 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*21"
+"brushmodel" "*21"
+"health" "15"
+"renderamt" "55"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_breakable"
+}
+{
+"model" "*15"
+"brushmodel" "*15"
+"lip" "-1"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*16"
+"brushmodel" "*16"
+"lip" "-1"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*17"
+"brushmodel" "*17"
+"lip" "-1"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*18"
+"brushmodel" "*18"
+"lip" "-1"
+"movesnd" "2"
+"wait" "4"
+"speed" "100"
+"angles" "0 0 0"
+"rendercolor" "0 0 0"
+"classname" "func_door"
+}
+{
+"model" "*13"
+"brushmodel" "*13"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*14"
+"brushmodel" "*14"
+"renderamt" "100"
+"rendermode" "2"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*12"
+"brushmodel" "*12"
+"effects" "2048"
+"lip" "5"
+"stopsnd" "5"
+"movesnd" "1"
+"renderamt" "255"
+"rendermode" "4"
+"fireonopening" "w.morenpcs1.r"
+"fireonopening_triggerstate" "1"
+"wait" "4"
 "speed" "100"
 "angles" "90 0 0"
 "rendercolor" "0 0 0"
-"spawnflags" "64"
-"classname" "func_button"
+"spawnflags" "256"
+"classname" "func_door"
 }
 {
-"origin" "-848 464 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 432 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 368 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 400 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 304 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 336 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 240 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 272 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 176 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 208 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 112 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 144 -1104"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 48 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 80 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 -16 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"origin" "-848 16 -1088"
-"angles" "0 0 0"
-"classname" "item_longjump"
-}
-{
-"model" "*94"
-"target" "door1ms"
-"wait" "1"
+"model" "*1"
+"brushmodel" "*1"
+"WaveHeight" "3.2"
+"skin" "-3"
+"renderamt" "200"
+"rendermode" "2"
+"wait" "4"
 "speed" "100"
 "angles" "0 0 0"
 "rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "func_button"
+"classname" "func_water"
 }
 {
-"model" "*95"
-"target" "door1ms"
-"wait" "1"
-"speed" "100"
-"angles" "0 0 0"
+"model" "*2"
+"brushmodel" "*2"
 "rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*3"
+"brushmodel" "*3"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*4"
+"brushmodel" "*4"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*5"
+"brushmodel" "*5"
+"classname" "func_ladder"
+}
+{
+"model" "*6"
+"brushmodel" "*6"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*7"
+"brushmodel" "*7"
+"classname" "func_ladder"
+}
+{
+"model" "*8"
+"brushmodel" "*8"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"model" "*9"
+"brushmodel" "*9"
+"classname" "func_ladder"
+}
+{
+"model" "*10"
+"brushmodel" "*10"
+"classname" "func_ladder"
+}
+{
+"model" "*11"
+"brushmodel" "*11"
+"rendermode" "4"
+"renderamt" "255"
+"rendercolor" "0 0 0"
+"classname" "func_wall"
+}
+{
+"classname" "game_text"
 "spawnflags" "1"
-"classname" "func_button"
+"targetname" "w.credits"
+"message" "Mapa creado por ZenArcade"
+"x" "-1"
+"y" ".6"
+"color" "255 255 255"
+"color2" "255 255 255"
+"fadein" ".025"
+"effect" "2"
+"target" "w.msg.sfx"
+"fadeout" "1"
+"holdtime" "5"
+"fxtime" "0.25"
+"channel" "1"
+"origin" "0 0 0"
+}
+{
+"origin" "0 0 0"
+"spawnflags" "113"
+"playmode" "1"
+"message" "buttons/blip3.wav"
+"targetname" "w.msg.sfx"
+"health" "10"
+"classname" "ambient_generic"
 }
 {
 "origin" "-848 -16 352"
 "target" "secret"
-"targetname" "doorms"
+"targetname" "secretdoorms"
 "classname" "multisource"
 }
 {
-"model" "*96"
-"targetname" "secret"
-"material" "8"
-"rendercolor" "0 0 0"
-"spawnflags" "1"
-"classname" "func_breakable"
-}
-{
-"model" "*97"
-"classname" "func_ladder"
-}
-{
-"model" "*98"
-"renderamt" "255"
-"rendermode" "4"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "-352 32 -568"
-"style" "5"
-"_fade" "1.0"
-"_light" "43 221 47 200"
-"classname" "light"
-}
-{
-"origin" "-176 32 -568"
-"style" "9"
-"_fade" "1.0"
-"_light" "255 0 128 200"
-"classname" "light"
-}
-{
-"origin" "-176 128 -568"
-"style" "4"
-"_fade" "1.0"
-"_light" "255 255 0 200"
-"classname" "light"
-}
-{
-"origin" "-176 -64 -568"
-"style" "6"
-"_fade" "1.0"
-"_light" "0 0 255 200"
-"classname" "light"
-}
-{
-"origin" "-480 32 -568"
-"_fade" "1.0"
-"_light" "255 0 0 200"
-"classname" "light"
-}
-{
-"model" "*99"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*100"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*101"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"model" "*102"
-"renderamt" "100"
-"rendermode" "2"
-"rendercolor" "0 0 0"
-"classname" "func_wall"
-}
-{
-"origin" "-672 128 -616"
-"pose" "1"
-"angles" "0 48 0"
-"rendercolor" "0 0 0"
-"classname" "monster_barney_dead"
-}
-{
-"origin" "-436 -132 -616"
-"angles" "0 247 0"
-"rendercolor" "0 0 0"
-"classname" "monster_barney_dead"
-}
-{
-"origin" "-384 32 -632"
-"pose" "1"
-"body" "-1"
+"classname" "light_environment"
 "angles" "0 0 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "-444 156 -616"
-"body" "-1"
-"angles" "0 132 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "-788 -64 -656"
-"pose" "4"
-"body" "-1"
-"angles" "0 45 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "-128 -172 -656"
-"pose" "2"
-"body" "-1"
-"angles" "0 181 0"
-"rendercolor" "0 0 0"
-"classname" "monster_scientist_dead"
-}
-{
-"origin" "-416 -134 -616"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
-}
-{
-"origin" "-148 -163 -656"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
-}
-{
-"origin" "-112 -152 -618"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
-}
-{
-"origin" "-176 32 -640"
-"angles" "0 180 0"
-"classname" "weapon_egon"
-}
-{
-"origin" "-176 128 -640"
-"angles" "0 180 0"
-"classname" "weapon_egon"
-}
-{
-"origin" "-176 -64 -640"
-"angles" "0 180 0"
-"classname" "weapon_egon"
-}
-{
-"origin" "-144 32 -640"
-"angles" "0 180 0"
-"classname" "ammo_gaussclip"
-}
-{
-"origin" "-208 -64 -640"
-"angles" "0 180 0"
-"classname" "ammo_gaussclip"
-}
-{
-"origin" "-208 32 -640"
-"angles" "0 180 0"
-"classname" "ammo_gaussclip"
-}
-{
-"origin" "-208 128 -640"
-"angles" "0 180 0"
-"classname" "ammo_gaussclip"
-}
-{
-"origin" "-672 32 -568"
 "_fade" "1.0"
-"_light" "64 128 128 200"
+"_light" "255 255 128 200"
+"origin" "-2176 0 256"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/tankidle2.wav"
+"origin" "-3008 -16 120"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/tankidle2.wav"
+"origin" "-2448 48 120"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "1"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/industrial2.wav"
+"origin" "-2632 12 188"
+}
+{
 "classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1104 -64 112"
 }
 {
-"model" "*107"
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "720 -64 112"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "720 -1024 112"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1104 -1024 112"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1232 -576 304"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "912 -1184 304"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1136 96 304"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "352 -1184 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "776 64 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1136 321 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1239 -1488 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1472 -1184 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1472 64 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1472 -576 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 75"
+"_fade" "1.0"
+"origin" "768 -1704 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 75"
+"_fade" "1.0"
+"origin" "896 -1704 200"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "352 -200 344"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "577 -744 344"
+}
+{
+"classname" "monster_scientist_dead"
 "rendercolor" "0 0 0"
-"classname" "func_healthcharger"
+"angles" "0 325 0"
+"body" "-1"
+"origin" "528 -112 288"
 }
 {
-"model" "*108"
+"classname" "monster_scientist_dead"
 "rendercolor" "0 0 0"
-"classname" "func_healthcharger"
+"angles" "0 47 0"
+"body" "-1"
+"pose" "1"
+"origin" "528 -16 288"
 }
 {
-"model" "*109"
+"classname" "monster_scientist_dead"
 "rendercolor" "0 0 0"
-"classname" "func_healthcharger"
+"angles" "0 0 0"
+"body" "-1"
+"pose" "2"
+"origin" "976 -624 240"
 }
 {
-"model" "*110"
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "584 1184 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "496 672 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1072 2272 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "496 2272 320"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
 "rendercolor" "0 0 0"
-"classname" "func_healthcharger"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"origin" "880 2552 240"
 }
 {
-"model" "*111"
-"skin" "-1"
-"renderamt" "155"
-"rendermode" "2"
+"classname" "monster_sentry"
+"spawnflags" "32"
 "rendercolor" "0 0 0"
-"classname" "func_illusionary"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"origin" "688 2552 240"
 }
 {
-"model" "*112"
-"skin" "-1"
-"renderamt" "155"
-"rendermode" "2"
+"classname" "monster_sentry"
+"spawnflags" "32"
 "rendercolor" "0 0 0"
-"classname" "func_illusionary"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"origin" "720 1520 240"
 }
 {
-"origin" "-120 92 -569"
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"origin" "464 968 240"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"orientation" "1"
+"origin" "520 928 400"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "100"
+"orientation" "1"
+"origin" "672 1696 400"
+}
+{
+"classname" "monster_gman"
+"spawnflags" "16"
+"rendercolor" "0 0 0"
+"angles" "0 194 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "816 2912 240"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "18"
+"rendercolor" "0 0 0"
+"angles" "0 338 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "32"
+"origin" "752 2912 240"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "944 3008 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "624 3008 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "968 2664 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1288 2664 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "288 2664 320"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "608 2664 320"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "464 2624 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "592 2624 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "1104 2624 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "976 2624 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "1040 2712 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "784 2712 264"
+}
+{
+"classname" "monster_tripmine"
+"spawnflags" "1"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"origin" "528 2712 264"
+}
+{
+"classname" "light"
+"_light" "47 225 43 200"
+"_fade" "1.0"
+"origin" "1808 3296 240"
+}
+{
+"classname" "light"
+"_light" "47 225 43 200"
+"_fade" "1.0"
+"origin" "1808 3168 240"
+}
+{
+"classname" "light"
+"_light" "47 225 43 200"
+"_fade" "1.0"
+"origin" "1808 2656 240"
+}
+{
+"classname" "light"
+"_light" "47 225 43 200"
+"_fade" "1.0"
+"origin" "1808 2528 240"
+}
+{
+"classname" "multisource"
+"targetname" "t1_master"
+"origin" "1616 2904 408"
+}
+{
+"classname" "multi_manager"
+"targetname" "t1_trigger"
+"t1_master" "0"
+"origin" "1616 2880 408"
+}
+{
+"classname" "env_sprite"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"framerate" "10.0"
+"model" "sprites/c-tele1.spr"
+"rendermode" "5"
+"renderamt" "255"
+"targetname" "t1_trigger"
+"origin" "1800 2904 408"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "17"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/particle_suck1.wav"
+"targetname" "t1_trigger"
+"origin" "1800 2904 392"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "24"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/zapmachine.wav"
+"fadein" "2"
+"targetname" "t1_trigger"
+"origin" "1800 2904 424"
+}
+{
+"classname" "light"
+"spawnflags" "1"
+"_light" "112 225 43 200"
+"_fade" "1.0"
+"targetname" "t1_trigger"
+"style" "32"
+"origin" "1800 2904 444"
+}
+{
+"classname" "game_text"
+"spawnflags" "1"
+"x" "-1"
+"y" ".6"
+"color" "100 100 100"
+"color2" "240 110 0"
+"fadein" "1.5"
+"fadeout" "0.5"
+"holdtime" "5"
+"fxtime" "0.25"
+"channel" "1"
+"message" "Teletransportador inicializado... felicitaciones."
+"targetname" "t1_trigger"
+"origin" "1800 2600 264"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "320 480 -1024"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1216 224 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 1296 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 -848 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 300"
+"_fade" "1.0"
+"origin" "-316 -1344 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 300"
+"_fade" "1.0"
+"origin" "-316 -1648 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 300"
+"_fade" "1.0"
+"origin" "608 -1648 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 300"
+"_fade" "1.0"
+"origin" "608 -1348 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "960 224 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 -672 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 1056 -1032"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-192 480 -1024"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "320 -32 -1024"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-192 -32 -1024"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/waterfall2.wav"
+"origin" "64 112 -1048"
+}
+{
+"classname" "light"
+"_light" "248 7 7 100"
+"_fade" "1.0"
+"style" "10"
+"origin" "64 -1100 -892"
+}
+{
+"classname" "light_environment"
+"angles" "0 0 0"
+"_fade" "1.0"
+"_light" "255 255 128 200"
+"origin" "1520 240 -2016"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "1520 -504 -2016"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "2248 240 -2016"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "1520 -1160 -2016"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "792 -1888 -2016"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "2392 224 -968"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "1824 224 -968"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "-192 -1440 -2048"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "-1112 -1440 -2048"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "-1200 -1280 -2000"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "-848 -1440 -2048"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "64 -1440 -2048"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "320 -1888 -2016"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "1520 -1888 -2016"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "1520 240 -2016"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "2352 224 -2016"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/drips.wav"
+"origin" "1520 -832 -2016"
+}
+{
+"classname" "monster_male_assassin"
+"weapons" "10"
+"health" "250"
+"classify" "4"
+"origin" "-1232 -1792 -1837"
+}
+{
+"classname" "monster_male_assassin"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "-1232 -1984 -1837"
+}
+{
+"classname" "multisource"
+"targetname" "door1ms"
+"target" "door1"
+"origin" "104 -1392 -904"
+}
+{
+"classname" "light"
+"_light" "28 16 252 100"
+"_fade" "1.0"
+"origin" "-560 -1664 -1024"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 2640 -904"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-32 2264 -936"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "168 2264 -936"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "512 1792 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "64 1792 -992"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-384 1792 -992"
+}
+{
+"classname" "light"
+"_light" "30 14 220 100"
+"_fade" "1.0"
+"origin" "-8 2824 -912"
+}
+{
+"classname" "light"
+"_light" "30 14 220 100"
+"_fade" "1.0"
+"origin" "152 2824 -912"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "64"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"targetname" "turret2"
+"orientation" "1"
+"origin" "-48 2440 -832"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "64"
+"angles" "0 90 0"
+"targetname" "turret2"
+"orientation" "1"
+"origin" "184 2440 -832"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"angles" "0 270 0"
+"orientation" "1"
+"origin" "-48 2352 -832"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"orientation" "1"
+"origin" "184 2352 -832"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "1248 512 -1992"
+}
+{
+"classname" "light"
+"_fade" "1.0"
+"_light" "255 255 255 200"
+"origin" "1824 -2176 -2008"
+}
+{
+"classname" "env_sprite"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"framerate" "10.0"
+"model" "sprites/portal1.spr"
+"renderfx" "14"
+"rendermode" "5"
+"renderamt" "150"
+"origin" "-1832 168 -1072"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/zapmachine.wav"
+"origin" "-1832 224 -1072"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-1728 224 -1024"
+}
+{
+"classname" "light"
+"_light" "255 255 255 200"
+"_fade" "1.0"
+"origin" "-864 224 -1024"
+}
+{
+"classname" "info_teleport_destination"
+"angles" "0 270 0"
+"targetname" "t1_dest"
+"origin" "64 120 -952"
+}
+{
+"classname" "env_sprite"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"framerate" "10.0"
+"model" "sprites/portal1.spr"
+"renderfx" "14"
+"rendermode" "5"
+"renderamt" "150"
+"origin" "-1832 280 -1072"
+}
+{
+"classname" "game_end"
+"targetname" "w.theend"
+"origin" "-1832 112 -880"
+}
+{
+"classname" "game_text"
+"spawnflags" "1"
+"x" "-1"
+"y" ".6"
+"color" "100 100 100"
+"color2" "240 110 0"
+"fadein" "1.5"
+"fadeout" "0.5"
+"holdtime" "1.2"
+"fxtime" "0.25"
+"channel" "1"
+"targetname" "weakwall"
+"message" "Tienes que encontrar el detonador para destruir este muro"
+"origin" "-576 200 -1008"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 181 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"classify" "4"
+"origin" "-1984 112 112"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 181 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"classify" "4"
+"origin" "-1696 -112 112"
+}
+{
+"classname" "squadmaker"
+"spawnflags" "1"
+"angles" "0 180 0"
+"rendercolor" "0 0 0"
+"monstercount" "5"
+"delay" "10"
+"m_imaxlivechildren" "5"
+"new_body" "-1"
+"notsolid" "-1"
+"gag" "-1"
+"weapons" "1"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"monstertype" "monster_male_assassin"
+"netname" "monster_male_assassin"
+"classify" "4"
+"origin" "-1456 112 96"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 315 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "-448 672 64"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 45 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "-768 -448 64"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 199 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "1408 48 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 199 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "1360 -368 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 199 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "1360 -880 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 199 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "1360 -1376 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 139 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "448 -1376 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 139 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "448 -880 48"
+}
+{
+"classname" "monster_male_assassin"
+"rendercolor" "0 0 0"
+"angles" "0 139 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "1"
+"health" "200"
+"origin" "432 -320 48"
+}
+{
+"classname" "monster_barnacle"
+"rendercolor" "0 0 0"
+"origin" "896 -1600 352"
+}
+{
+"classname" "monster_barnacle"
+"rendercolor" "0 0 0"
+"origin" "896 -1792 352"
+}
+{
+"classname" "monster_barnacle"
+"rendercolor" "0 0 0"
+"origin" "768 -1792 352"
+}
+{
+"classname" "monster_barnacle"
+"rendercolor" "0 0 0"
+"origin" "768 -1600 352"
+}
+{
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
+"origin" "555 -118 288"
+}
+{
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
+"origin" "525 -40 288"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "-800 -326 125"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "-327 -480 118"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "272 -230 127"
+}
+{
+"classname" "monster_alien_slave"
+"displayname" "Thunder"
+"model" "models/cards/thunder.mdl"
+"origin" "960 -560 240"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"health" "250"
+"origin" "1152 -560 240"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"health" "250"
+"origin" "1312 -560 240"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"health" "250"
+"origin" "480 -624 240"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"health" "250"
+"origin" "640 -624 240"
+}
+{
+"classname" "monster_alien_slave"
+"displayname" "Thunder"
+"model" "models/cards/thunder.mdl"
+"origin" "464 144 272"
+}
+{
+"classname" "monster_alien_slave"
+"displayname" "Thunder"
+"model" "models/cards/thunder.mdl"
+"origin" "640 32 288"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 231 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"orientation" "1"
+"health" "150"
+"origin" "1808 3232 560"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 180 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"orientation" "1"
+"health" "150"
+"classify" "4"
+"origin" "1800 2904 560"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 121 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"orientation" "1"
+"health" "150"
+"origin" "1800 2600 560"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"origin" "-8 -232 -1056"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"origin" "152 -232 -1056"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"origin" "-8 528 -1056"
+}
+{
+"classname" "monster_alien_grunt"
+"model" "models/bm_sts/agrunt.mdl"
+"angles" "0 270 0"
+"origin" "152 528 -1056"
+}
+{
+"classname" "monster_alien_slave"
+"displayname" "Thunder"
+"model" "models/cards/thunder.mdl"
+"angles" "0 270 0"
+"origin" "-320 248 -1056"
+}
+{
+"classname" "monster_zombie"
+"model" "models/buff_zombies/zombie.mdl"
+"angles" "0 270 0"
+"origin" "-320 304 -1056"
+}
+{
+"classname" "monster_zombie_soldier"
+"model" "models/buff_zombies/zombie_soldier.mdl"
+"angles" "0 270 0"
+"origin" "384 312 -1056"
+}
+{
+"classname" "monster_alien_slave"
+"displayname" "Thunder"
+"model" "models/cards/thunder.mdl"
+"angles" "0 270 0"
+"origin" "384 256 -1056"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "5"
+"orientation" "1"
+"origin" "64 -1256 -832"
+}
+{
+"classname" "monster_turret"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 180 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "608 -1696 -1088"
+}
+{
+"classname" "monster_gonome"
+"model" "models/bm_sts/gonome.mdl"
+"angles" "0 271 0"
+"origin" "1824 384 -1072"
+}
+{
+"classname" "monster_gonome"
+"model" "models/bm_sts/gonome.mdl"
+"angles" "0 271 0"
+"origin" "1824 48 -1072"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "2152 24 -2080"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1880 32 -2080"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1880 408 -2080"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "2152 400 -2080"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1216 -32 -2104"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1216 232 -2104"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "1304 464 -2112"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1328 -728 -2104"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 92 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "3"
+"health" "250"
+"classify" "4"
+"origin" "1720 -1128 -2104"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 92 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "1320 -1520 -2104"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 121 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "1768 -2096 -2112"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1006 -2128 -2046"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1392 -2272 -2064"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1888 -1725 -2061"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1280 -999 -2065"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1760 -723 -2066"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "1671 608 -2064"
+}
+{
+"classname" "infodecal"
+"texture" "{VINE1"
+"origin" "2058 -16 -2051"
+}
+{
+"classname" "info_node"
+"origin" "-1984 -64 128"
+}
+{
+"classname" "info_node"
+"origin" "-1984 112 124"
+}
+{
+"classname" "info_node"
+"origin" "-1712 -104 124"
+}
+{
+"classname" "info_node"
+"origin" "-1456 112 124"
+}
+{
+"classname" "info_node"
+"origin" "-1208 -16 124"
+}
+{
+"classname" "info_node"
+"origin" "-2144 8 124"
+}
+{
+"classname" "info_node"
+"origin" "-2144 -48 124"
+}
+{
+"classname" "info_node"
+"origin" "-2200 -48 124"
+}
+{
+"classname" "info_node"
+"origin" "-2528 0 124"
+}
+{
+"classname" "info_node"
+"origin" "-2960 96 124"
+}
+{
+"classname" "info_node"
+"origin" "536 -352 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -296 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -352 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -864 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -808 100"
+}
+{
+"classname" "info_node"
+"origin" "536 -864 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -1344 100"
+}
+{
+"classname" "info_node"
+"origin" "592 -1288 100"
+}
+{
+"classname" "info_node"
+"origin" "536 -1344 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 168 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 224 100"
+}
+{
+"classname" "info_node"
+"origin" "1304 224 100"
+}
+{
+"classname" "info_node"
+"origin" "1304 -224 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -224 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -280 100"
+}
+{
+"classname" "info_node"
+"origin" "1304 -736 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -736 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -792 100"
+}
+{
+"classname" "info_node"
+"origin" "1304 -1216 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -1216 100"
+}
+{
+"classname" "info_node"
+"origin" "1360 -1272 100"
+}
+{
+"classname" "info_node"
+"origin" "936 -1296 100"
+}
+{
+"classname" "info_node"
+"origin" "928 -784 100"
+}
+{
+"classname" "info_node"
+"origin" "936 -288 100"
+}
+{
+"classname" "info_node"
+"origin" "1264 -600 252"
+}
+{
+"classname" "info_node"
+"origin" "1272 -104 252"
+}
+{
+"classname" "info_node"
+"origin" "1272 -1112 252"
+}
+{
+"classname" "info_node"
+"origin" "640 176 252"
+}
+{
+"classname" "info_node"
+"origin" "632 -320 252"
+}
+{
+"classname" "info_node"
+"origin" "400 168 252"
+}
+{
+"classname" "info_node"
+"origin" "416 -272 252"
+}
+{
+"classname" "info_node"
+"origin" "-336 176 -1024"
+}
+{
+"classname" "info_node"
+"origin" "72 520 -1028"
+}
+{
+"classname" "info_node"
+"origin" "448 224 -1028"
+}
+{
+"classname" "info_node"
+"origin" "72 -232 -1028"
+}
+{
+"classname" "info_node"
+"origin" "64 -840 -1028"
+}
+{
+"classname" "info_node"
+"origin" "64 1296 -1028"
+}
+{
+"classname" "info_node"
+"origin" "1056 224 -1028"
+}
+{
+"classname" "info_node"
+"origin" "1840 224 -1028"
+}
+{
+"classname" "monster_gonome"
+"model" "models/bm_sts/gonome.mdl"
+"angles" "0 90 0"
+"classify" "5"
+"origin" "64 -1440 -1064"
+}
+{
+"classname" "info_node"
+"origin" "80 -1264 -1020"
+}
+{
+"classname" "info_node"
+"origin" "2144 72 -2008"
+}
+{
+"classname" "info_node"
+"origin" "2144 400 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1872 408 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1872 56 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1536 216 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1216 240 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1208 -24 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1208 112 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1328 -736 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1720 -1128 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1320 -1520 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1544 0 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1544 -432 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1544 -864 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1544 -1288 -1988"
+}
+{
+"classname" "info_node"
+"origin" "1544 -1720 -1988"
+}
+{
+"classname" "weapon_handgrenade"
+"angles" "0 0 0"
+"origin" "544 -64 288"
+}
+{
+"classname" "weapon_handgrenade"
+"angles" "0 0 0"
+"origin" "512 -64 288"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "-400 128 -984"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "-400 240 -988"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "-400 352 -988"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "496 128 -980"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "496 240 -984"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "496 352 -984"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 704 -1000"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 816 -1004"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 928 -1004"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 -880 -1000"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 -768 -1004"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn3"
+"origin" "64 -656 -1004"
+}
+{
+"classname" "monster_headcrab"
+"rendercolor" "0 0 0"
+"angles" "0 270 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "1216 2896 512"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "8"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/waterfall3.wav"
+"origin" "-3296 0 -248"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 271 0"
+"origin" "2528 376 -1920"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 271 0"
+"origin" "2528 336 -1920"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 271 0"
+"origin" "2488 376 -1920"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 271 0"
+"origin" "2488 336 -1920"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 271 0"
+"origin" "2488 72 -1920"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 271 0"
+"origin" "2528 72 -1920"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 271 0"
+"origin" "2528 112 -1920"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 271 0"
+"origin" "2488 112 -1920"
+}
+{
+"classname" "weapon_handgrenade"
+"angles" "0 271 0"
+"origin" "2416 92 -1920"
+}
+{
+"classname" "weapon_handgrenade"
+"angles" "0 271 0"
+"origin" "2416 356 -1920"
+}
+{
+"classname" "light"
+"_light" "240 47 47 100"
+"_fade" "1.0"
+"style" "10"
+"origin" "784 1872 304"
+}
+{
+"classname" "light"
+"_light" "240 47 47 100"
+"_fade" "1.0"
+"origin" "784 1568 304"
+}
+{
+"classname" "light"
+"_light" "68 50 228 100"
+"_fade" "1.0"
+"origin" "784 1712 304"
+}
+{
+"classname" "env_spark"
+"angles" "0 0 0"
+"origin" "784 1872 304"
+}
+{
+"classname" "monster_tentacle"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"sweeparc" "130"
+"sound" "-1"
+"classify" "4"
+"origin" "-128 -1712 -2224"
+}
+{
+"classname" "monster_tentacle"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"sweeparc" "130"
+"sound" "-1"
+"classify" "4"
+"origin" "-992 -1704 -2224"
+}
+{
+"classname" "light"
+"_light" "255 255 255 75"
+"_fade" "1.0"
+"origin" "2432 224 -1824"
+}
+{
+"classname" "light"
+"_light" "255 255 255 75"
+"_fade" "1.0"
+"origin" "2432 224 -2056"
+}
+{
+"classname" "weapon_sniperrifle"
+"angles" "0 269 0"
+"origin" "981.305 -1702.8 -2112"
+}
+{
+"classname" "weapon_sniperrifle"
+"angles" "0 89 0"
+"origin" "984 -2088 -2112"
+}
+{
+"classname" "ammo_762"
+"angles" "0 89 0"
+"rendercolor" "0 0 0"
+"origin" "1016 -2072 -2112"
+}
+{
+"classname" "ammo_762"
+"angles" "0 89 0"
+"rendercolor" "0 0 0"
+"origin" "1016 -2104 -2112"
+}
+{
+"classname" "ammo_762"
+"angles" "0 89 0"
+"rendercolor" "0 0 0"
+"origin" "1016 -1712 -2112"
+}
+{
+"classname" "ammo_762"
+"angles" "0 89 0"
+"rendercolor" "0 0 0"
+"origin" "1016 -1680 -2112"
+}
+{
+"classname" "game_text"
+"spawnflags" "1"
+"message" "Se ha abierto una puerta en el vestibulo"
+"x" "-1"
+"y" ".6"
+"color" "100 100 100"
+"color2" "240 110 0"
+"fadein" "1.5"
+"fadeout" "0.5"
+"holdtime" "1.2"
+"fxtime" "0.25"
+"channel" "1"
+"targetname" "door33"
+"origin" "-1248 -1272 -2056"
+}
+{
+"classname" "game_text"
+"spawnflags" "1"
+"message" "Se ha abierto una puerta en el vestibulo"
+"x" "-1"
+"y" ".6"
+"color" "100 100 100"
+"color2" "240 110 0"
+"fadein" "1.5"
+"fadeout" "0.5"
+"holdtime" "1.2"
+"fxtime" "0.25"
+"channel" "1"
+"targetname" "door2"
+"origin" "-544 -1664 -1024"
+}
+{
+"classname" "squadmaker"
+"monstertype" "monster_gargantua"
+"targetname" "turret2"
+"renderfx" "19"
+"rendercolor" "0 0 255"
+"monstercount" "1"
+"delay" "1"
+"m_imaxlivechildren" "1"
+"new_body" "-1"
+"classify" "4"
+"notsolid" "-1"
+"gag" "-1"
+"weapons" "1"
+"displayname" "ZOMG A GARG!!!"
+"health" "2000"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"angles" "0 0 0"
+"origin" "64 1296 -1056"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "17"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "ambience/particle_suck1.wav"
+"targetname" "turret2"
+"origin" "64 1296 -1008"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "-256 672 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "-208 672 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-112 696 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-160 696 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-112 648 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-160 648 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "240 696 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "288 696 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "288 648 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "240 648 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "336 672 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "384 672 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "240 -208 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "288 -208 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "288 -256 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "240 -256 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "336 -232 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "384 -232 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "-256 -232 -1056"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 0 0"
+"origin" "-208 -232 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-160 -208 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-112 -208 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-112 -256 -1056"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 0 0"
+"origin" "-160 -256 -1056"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 464 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 432 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 368 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 400 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 304 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 336 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 240 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 272 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 176 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 208 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 112 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 144 -1104"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 48 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 80 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 -16 -1088"
+}
+{
+"classname" "item_longjump"
+"angles" "0 0 0"
+"origin" "-848 16 -1088"
+}
+{
+"classname" "light"
+"_light" "43 221 47 200"
+"_fade" "1.0"
+"style" "5"
+"origin" "-352 32 -568"
+}
+{
+"classname" "light"
+"_light" "255 0 128 200"
+"_fade" "1.0"
+"style" "9"
+"origin" "-176 32 -568"
+}
+{
+"classname" "light"
+"_light" "255 255 0 200"
+"_fade" "1.0"
+"style" "4"
+"origin" "-176 128 -568"
+}
+{
+"classname" "light"
+"_light" "0 0 255 200"
+"_fade" "1.0"
+"style" "6"
+"origin" "-176 -64 -568"
+}
+{
+"classname" "light"
+"_light" "255 0 0 200"
+"_fade" "1.0"
+"origin" "-480 32 -568"
+}
+{
+"classname" "monster_barney_dead"
+"rendercolor" "0 0 0"
+"angles" "0 48 0"
+"pose" "1"
+"origin" "-672 128 -616"
+}
+{
+"classname" "monster_barney_dead"
+"rendercolor" "0 0 0"
+"angles" "0 247 0"
+"origin" "-436 -132 -616"
+}
+{
+"classname" "monster_scientist_dead"
+"rendercolor" "0 0 0"
+"angles" "0 0 0"
+"body" "-1"
+"pose" "1"
+"origin" "-384 32 -632"
+}
+{
+"classname" "monster_scientist_dead"
+"rendercolor" "0 0 0"
+"angles" "0 132 0"
+"body" "-1"
+"origin" "-444 156 -616"
+}
+{
+"classname" "monster_scientist_dead"
+"rendercolor" "0 0 0"
+"angles" "0 45 0"
+"body" "-1"
+"pose" "4"
+"origin" "-788 -64 -656"
+}
+{
+"classname" "monster_scientist_dead"
+"rendercolor" "0 0 0"
+"angles" "0 181 0"
+"body" "-1"
+"pose" "2"
+"origin" "-128 -172 -656"
+}
+{
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
+"origin" "-416 -134 -616"
+}
+{
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
+"origin" "-148 -163 -656"
+}
+{
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
+"origin" "-112 -152 -618"
+}
+{
+"classname" "weapon_egon"
+"spawnflags" "1152"
+"angles" "0 180 0"
+"origin" "-176 32 -640"
+}
+{
+"classname" "weapon_egon"
+"spawnflags" "1152"
+"angles" "0 180 0"
+"origin" "-176 128 -640"
+}
+{
+"classname" "weapon_egon"
+"spawnflags" "1152"
+"angles" "0 180 0"
+"origin" "-176 -64 -640"
+}
+{
+"classname" "ammo_gaussclip"
+"angles" "0 180 0"
+"origin" "-144 32 -640"
+}
+{
+"classname" "ammo_gaussclip"
+"spawnflags" "1024"
+"angles" "0 180 0"
+"origin" "-208 -64 -640"
+}
+{
+"classname" "ammo_gaussclip"
+"spawnflags" "1024"
+"angles" "0 180 0"
+"origin" "-208 32 -640"
+}
+{
+"classname" "ammo_gaussclip"
+"spawnflags" "1024"
+"angles" "0 180 0"
+"origin" "-208 128 -640"
+}
+{
+"classname" "light"
+"_light" "64 128 128 200"
+"_fade" "1.0"
+"origin" "-672 32 -568"
+}
+{
+"classname" "infodecal"
 "texture" "{64#1"
-"classname" "infodecal"
+"origin" "-120 92 -569"
 }
 {
-"origin" "-120 52 -584"
+"classname" "infodecal"
 "texture" "{64#9"
-"classname" "infodecal"
+"origin" "-120 52 -584"
 }
 {
-"origin" "-120 12 -569"
+"classname" "infodecal"
 "texture" "{64#8"
-"classname" "infodecal"
+"origin" "-120 12 -569"
 }
 {
-"origin" "-120 -28 -585"
+"classname" "infodecal"
 "texture" "{64#7"
-"classname" "infodecal"
+"origin" "-120 -28 -585"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-364 39 -640"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-421 170 -616"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-649 125 -616"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-721 -56 -616"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-816 -50 -626"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-793 -40 -656"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-578 42 -656"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-533 117 -656"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD1"
 "origin" "-525 272 -582"
-"texture" "{BIGBLOOD1"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD2"
 "origin" "-541 -33 -656"
-"texture" "{BIGBLOOD2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD2"
 "origin" "-646 272 -565"
-"texture" "{BIGBLOOD2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGBLOOD2"
 "origin" "-638 124 -512"
-"texture" "{BIGBLOOD2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BLOODHAND2"
 "origin" "-640 -62 -616"
-"texture" "{BLOODHAND2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BLOODHAND2"
 "origin" "-779 50 -656"
-"texture" "{BLOODHAND2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BLOODHAND2"
 "origin" "-170 -18 -640"
-"texture" "{BLOODHAND2"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-112 -150 -581"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-140 -201 -656"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-143 -208 -620"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-124 -204 -603"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-414 272 -554"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-459 272 -576"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-474 272 -586"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-562 272 -628"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-580 272 -638"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-594 272 -546"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-687 272 -619"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-686 272 -634"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-630 272 -631"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-717 272 -556"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-605 272 -584"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-590 272 -594"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
+"classname" "infodecal"
+"texture" "{BIGSHOT3"
 "origin" "-545 272 -546"
-"texture" "{BIGSHOT3"
-"classname" "infodecal"
 }
 {
-"origin" "-397 272 -602"
+"classname" "infodecal"
 "texture" "{BLOOD1"
-"classname" "infodecal"
+"origin" "-397 272 -602"
 }
 {
-"origin" "-552 213 -656"
+"classname" "infodecal"
 "texture" "{SCORCH3"
-"classname" "infodecal"
+"origin" "-552 213 -656"
 }
 {
-"origin" "1152 2808 512"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
+"classname" "monster_headcrab"
+"rendercolor" "0 0 0"
 "angles" "0 130 0"
-"rendercolor" "0 0 0"
-"classname" "monster_headcrab"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "1152 2808 512"
 }
 {
+"classname" "monster_headcrab"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
 "origin" "1104 2896 512"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
-"classname" "monster_headcrab"
 }
 {
-"origin" "1104 3024 512"
-"classify" "4"
-"maxhullsize" "0 0 0"
-"minhullsize" "0 0 0"
-"angles" "0 90 0"
-"rendercolor" "0 0 0"
 "classname" "monster_headcrab"
+"rendercolor" "0 0 0"
+"angles" "0 90 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"classify" "4"
+"origin" "1104 3024 512"
+}
+{
+"classname" "env_sprite"
+"model" "sprites/tc/babyarrows.spr"
+"rendercolor" "0 0 0"
+"rendermode" "5"
+"renderamt" "255"
+"vp_type" "4"
+"framerate" "5"
+"scale" "1"
+"spawnflags" "0"
+"targetname" "w.babyarrows1"
+"angles" "0 0 180"
+"origin" "948 -553 84"
+}
+{
+"classname" "env_sprite"
+"model" "sprites/tc/babyarrows.spr"
+"rendercolor" "0 0 0"
+"rendermode" "5"
+"renderamt" "255"
+"vp_type" "4"
+"framerate" "5"
+"scale" "1"
+"spawnflags" "0"
+"targetname" "w.babyarrows2"
+"angles" "90 0 0"
+"origin" "530 260 241"
+}
+{
+"classname" "env_sprite"
+"renderamt" "150"
+"rendermode" "2"
+"framerate" "5"
+"vp_type" "4"
+"model" "sprites/tc/wrongway.spr"
+"spawnflags" "1"
+"scale" ".4"
+"angles" "0 180 0"
+"origin" "300 208 148"
+}
+{
+"classname" "ambient_generic"
+"spawnflags" "49"
+"targetname" "w.tp.sfx"
+"health" "10"
+"pitch" "100"
+"pitchstart" "100"
+"message" "debris/beamstart8.wav"
+"origin" "0 0 0"
+}
+{
+"classname" "env_fade"
+"holdtime" "15"
+"duration" ".3"
+"rendercolor" "0 0 0"
+"renderamt" "255"
+"targetname" "w.endfade"
+"origin" "0 0 0"
+}
+{
+"classname" "multi_manager"
+"w.theend" "12"
+"w.credits" "6"
+"w.tp.sfx" "5"
+"w.endfade" "5"
+"targetname" "w.endseq.mm"
+"origin" "0 0 0"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.DONTCRASHTHESERVERLOL"
+"monstertype" "monster_kingpin"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"angles" "0 0 0"
+"origin" "-906 250 -1060"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.DONTCRASHTHESERVERLOL"
+"monstertype" "monster_hwgrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"angles" "0 0 0"
+"origin" "-906 250 -1060"
+}
+{
+"classname" "game_counter"
+"health" "3"
+"frags" "0"
+"spawnflags" "1"
+"delay" "0"
+"target" "w.endseq.mm"
+"targetname" "w.boss.counter"
+"origin" "0 0 0"
+}
+{
+"classname" "trigger_createentity"
+"m_iszCrtEntChildClass" "monster_kingpin"
+"targetname" "detwall"
+"-TriggerCondition" "4"
+"-TriggerTarget" "w.boss.counter"
+"-health" "3000"
+"-classify" "4"
+"origin" "-906 250 -1060"
+}
+{
+"classname" "trigger_createentity"
+"m_iszCrtEntChildClass" "monster_hwgrunt"
+"targetname" "detwall"
+"-TriggerCondition" "4"
+"-TriggerTarget" "w.boss.counter"
+"-health" "800"
+"-classify" "4"
+"-disable_minigun_drop" "1"
+"-model" "models/wayne/hwgrunt_ld.mdl"
+"origin" "-1592 447 -1060"
+}
+{
+"classname" "trigger_createentity"
+"m_iszCrtEntChildClass" "monster_hwgrunt"
+"targetname" "detwall"
+"-TriggerCondition" "4"
+"-TriggerTarget" "w.boss.counter"
+"-health" "800"
+"-classify" "4"
+"-disable_minigun_drop" "1"
+"-model" "models/wayne/hwgrunt_ld.mdl"
+"origin" "-1592 15 -1060"
+}
+{
+"classname" "squadmaker"
+"targetname" "detwall"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "4"
+"angles" "0 40 0"
+"origin" "-1001 25 -1040"
+}
+{
+"classname" "squadmaker"
+"targetname" "detwall"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "4"
+"angles" "0 -25 0"
+"origin" "-997 423 -1040"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "5"
+"angles" "0 -65 0"
+"origin" "290 2117 -1040"
+}
+{
+"classname" "squadmaker"
+"spawnflags" "0"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "8"
+"angles" "0 -65 0"
+"origin" "70 2117 -1040"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "5"
+"angles" "0 -65 0"
+"origin" "-164 2117 -1040"
+}
+{
+"classname" "squadmaker"
+"spawnflags" "8"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "64"
+"angles" "0 -90 0"
+"origin" "66 2746 -935"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "3"
+"angles" "0 -90 0"
+"origin" "304 2337 -1005"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "3"
+"angles" "0 -70 0"
+"origin" "-180 2337 -1005"
+}
+{
+"classname" "squadmaker"
+"spawnflags" "8"
+"targetname" "w.morenpcs4"
+"delay" "1"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "128"
+"angles" "0 -90 0"
+"origin" "67 2337 -1005"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd3"
+"xenmaker" "w.xentemplate"
+"delay" "1"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "5"
+"angles" "0 90 0"
+"origin" "2396 38 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd3"
+"xenmaker" "w.xentemplate"
+"delay" "1"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "5"
+"angles" "0 -90 0"
+"origin" "2396 456 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd2"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "6"
+"m_imaxlivechildren" "2"
+"angles" "0 -170 0"
+"origin" "2138 75 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd1"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "6"
+"m_imaxlivechildren" "2"
+"angles" "0 170 0"
+"origin" "2138 380 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd2"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "3"
+"m_imaxlivechildren" "2"
+"angles" "0 -150 0"
+"origin" "1652 372 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.2hrd1"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "3"
+"m_imaxlivechildren" "2"
+"angles" "0 150 0"
+"origin" "1689 75 -1050"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs3"
+"delay" "1"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "5"
+"angles" "0 0 0"
+"origin" "-401 -1234 -1055"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs3"
+"delay" "1"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "5"
+"angles" "0 15 0"
+"origin" "-303 -1333 -1055"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs3"
+"delay" "1"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"classify" "5"
+"angles" "0 175 0"
+"origin" "413 -1228 -1055"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs2"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "1"
+"angles" "0 -50 0"
+"origin" "323 2386 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs2"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "1"
+"angles" "0 -50 0"
+"origin" "1232 2295 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs2"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "128"
+"angles" "0 -96 0"
+"origin" "664 1922 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs2"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "8"
+"angles" "0 -107 0"
+"origin" "543 563 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs2"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_robogrunt"
+"monstercount" "1"
+"m_imaxlivechildren" "1"
+"weapons" "3"
+"angles" "0 -76 0"
+"origin" "435 740 280"
+}
+{
+"classname" "trigger_relay"
+"spawnflags" "1"
+"triggerstate" "1"
+"targetname" "w.morenpcs2.r"
+"target" "w.morenpcs2"
+"delay" "0"
+"origin" "0 0 0"
+}
+{
+"classname" "multisource"
+"targetname" "w.horde1.block"
+"origin" "0 0 0"
+}
+{
+"classname" "env_xenmaker"
+"m_vEndSpriteColor" "159 240 214"
+"m_iEndSpriteAlpha" "255"
+"m_flEndSpriteScale" "1.0"
+"m_flEndSpriteFramerate" "12"
+"m_vStartSpriteColor" "65 209 61"
+"m_iStartSpriteAlpha" "255"
+"m_flStartSpriteScale" "1.0"
+"m_flStartSpriteFramerate" "12"
+"m_vLightColor" "39 209 137"
+"m_flLightRadius" "160"
+"m_vBeamColor" "217 226 146"
+"m_iBeamCount" "8"
+"m_iBeamAlpha" "128"
+"m_flBeamRadius" "255"
+"monstertype" "monster_headcrab"
+"angles" "0 270 0"
+"targetname" "w.xentemplate"
+"origin" "0 0 0"
+}
+{
+"classname" "item_battery"
+"spawnflags" "1024"
+"target" "w.horde1.mm"
+"angles" "0 180 0"
+"origin" "1171 36 276"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd1"
+"xenmaker" "w.xentemplate"
+"delay" "0"
+"new_body" "-1"
+"dmg" "10"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 0 0"
+"origin" "958 -567 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd1"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 -120 0"
+"origin" "1278 352 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd1"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 45 0"
+"origin" "973 -361 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd2"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 -155 0"
+"origin" "1478 103 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd2"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 130 0"
+"origin" "1383 -345 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd3"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "5"
+"m_imaxlivechildren" "2"
+"angles" "0 -135 0"
+"origin" "820 -568 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd3"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "5"
+"m_imaxlivechildren" "2"
+"angles" "0 -20 0"
+"origin" "469 220 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd3"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"new_model" "models/bm_sts/gonome.mdl"
+"monstertype" "monster_gonome"
+"monstercount" "5"
+"m_imaxlivechildren" "2"
+"angles" "0 -20 0"
+"origin" "822 -1806 170"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd4"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 160 0"
+"origin" "1299 -1476 280"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.1hrd4"
+"xenmaker" "w.xentemplate"
+"delay" "2"
+"new_body" "-1"
+"monstertype" "monster_zombie_soldier"
+"displayname" "Zombie"
+"new_model" "models/buff_zombies/zombie.mdl"
+"monstercount" "4"
+"m_imaxlivechildren" "2"
+"angles" "0 45 0"
+"origin" "363 -1386 280"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -135 0"
+"origin" "-560 1661 -1040"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -35 0"
+"origin" "669 1661 -1040"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 180 0"
+"origin" "370 -1416 276"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 180 0"
+"origin" "370 -1341 276"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 180 0"
+"origin" "370 -1266 276"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 180 0"
+"origin" "370 -1191 276"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 90 0"
+"origin" "575 -1200 -1055"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 90 0"
+"origin" "650 -1200 -1055"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -90 0"
+"origin" "500 2007 280"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -90 0"
+"origin" "425 2007 280"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -90 0"
+"origin" "900 2007 280"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 -90 0"
+"origin" "975 2007 280"
+}
+{
+"classname" "monster_headcrab"
+"spawnflags" "1"
+"angles" "0 90 0"
+"origin" "893 -1743 167"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "3"
+"m_imaxlivechildren" "3"
+"weapons" "1"
+"angles" "0 180 0"
+"origin" "182 374 135"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "3"
+"m_imaxlivechildren" "3"
+"weapons" "1"
+"angles" "0 180 0"
+"origin" "207 74 135"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "2"
+"m_imaxlivechildren" "2"
+"weapons" "3"
+"angles" "0 180 0"
+"origin" "-304 -109 120"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "2"
+"m_imaxlivechildren" "2"
+"weapons" "3"
+"angles" "0 180 0"
+"origin" "-304 39 120"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "2"
+"m_imaxlivechildren" "2"
+"weapons" "5"
+"angles" "0 80 0"
+"origin" "743 -1437 55"
+}
+{
+"classname" "squadmaker"
+"targetname" "w.morenpcs1"
+"delay" "5"
+"new_body" "-1"
+"monstertype" "monster_male_assassin"
+"monstercount" "2"
+"m_imaxlivechildren" "2"
+"weapons" "1"
+"angles" "0 1800 0"
+"origin" "1030 -1431 55"
+}
+{
+"classname" "env_sprite"
+"model" "sprites/tc/babyarrows.spr"
+"rendercolor" "0 0 0"
+"rendermode" "5"
+"renderamt" "255"
+"vp_type" "4"
+"framerate" "5"
+"scale" "1"
+"spawnflags" "0"
+"targetname" "w.babyarrows3"
+"angles" "90 -90 0"
+"origin" "1056 224 -1103"
+}
+{
+"classname" "trigger_camera"
+"targetname" "w.camera1"
+"target" "w.camera1.t"
+"angles" "0 0 0"
+"wait" "5"
+"spawnflags" "8"
+"hud_health" "1"
+"hud_flashlight" "1"
+"hud_weapons" "1"
+"origin" "399 217 -963"
+}
+{
+"classname" "info_target"
+"targetname" "w.camera1.t"
+"origin" "1409 226 -1056"
+}
+{
+"classname" "trigger_camera"
+"targetname" "w.camera2"
+"target" "w.camera2.t"
+"angles" "0 0 0"
+"wait" "5"
+"spawnflags" "8"
+"hud_health" "1"
+"hud_flashlight" "1"
+"hud_weapons" "1"
+"origin" "64 1089 -993"
+}
+{
+"classname" "info_target"
+"targetname" "w.camera2.t"
+"origin" "64 1596 -1107"
+}
+{
+"classname" "env_sprite"
+"spawnflags" "1"
+"model" "sprites/adamr/pointers/pointer-use.spr"
+"rendercolor" "0 0 0"
+"framerate" "10.0"
+"renderfx" "9"
+"rendermode" "4"
+"renderamt" "255"
+"scale" ".1"
+"targetname" "w.useme2"
+"angles" "0 180 0"
+"vp_type" "4"
+"origin" "-1263 -1272 -2029"
+}
+{
+"classname" "env_sprite"
+"spawnflags" "1"
+"model" "sprites/adamr/pointers/pointer-use.spr"
+"rendercolor" "0 0 0"
+"framerate" "10.0"
+"renderfx" "9"
+"rendermode" "4"
+"renderamt" "255"
+"scale" ".1"
+"targetname" "w.useme1"
+"angles" "0 180 0"
+"vp_type" "4"
+"origin" "-567 -1664 -995"
+}
+{
+"classname" "monster_human_grunt_ally"
+"model" "models/hgrunt_opfor.mdl"
+"weapons" "3"
+"health" "500"
+"origin" "-3328 -124 110"
+}
+{
+"classname" "monster_human_medic_ally"
+"model" "models/hgrunt_medic.mdl"
+"weapons" "1"
+"health" "500"
+"origin" "-3328 -20 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3380 -127 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3268 -127 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3113 -127 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3380 -13 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3268 -13 110"
+}
+{
+"classname" "info_player_deathmatch"
+"angles" "0 0 0"
+"targetname" "spawn1"
+"origin" "-3113 -13 110"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "363 -537 114"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "438 -537 110"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "513 -537 110"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "363 -612 110"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "438 -612 110"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "2"
+"angles" "0 0 0"
+"targetname" "spawn2"
+"origin" "513 -612 110"
+}
+{
+"classname" "item_healthkit"
+"angles" "90 0 0"
+"spawnflags" "0"
+"movetype" "8"
+"health" "25"
+"origin" "2575 112 -1875.82"
+}
+{
+"classname" "item_healthkit"
+"angles" "90 180 0"
+"spawnflags" "0"
+"movetype" "8"
+"health" "25"
+"origin" "2385 184 -2104"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "383 -2433 -2076"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "234 -2445 -2076"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "410 -1487 -2077"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "380 -1282 -2092"
+}
+{
+"classname" "ammo_9mmbox"
+"angles" "0 337 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "281 -1167 -2112"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 255 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "336.292 -1163.87 -2112"
+}
+{
+"classname" "ammo_buckshot"
+"angles" "0 271 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "386.921 -1150.91 -2112"
+}
+{
+"classname" "item_battery"
+"angles" "0 197 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "-142 -1346 -2112"
+}
+{
+"classname" "item_battery"
+"angles" "0 216 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "-206 -1349 -2112"
+}
+{
+"classname" "monster_male_assassin"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "-1232 -1920 -1837"
+}
+{
+"classname" "monster_male_assassin"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "-1232 -1856 -1837"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "330 -1213 -1852"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "-32 -1360 -1804"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"rendercolor" "0 0 0"
+"angles" "0 318 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"health" "150"
+"classify" "4"
+"origin" "-336 -1360 -1836"
+}
+{
+"classname" "ammo_762"
+"angles" "0 173 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "-532 -1148 -2112"
+}
+{
+"classname" "ammo_762"
+"angles" "0 341 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "-500 -1172 -2112"
+}
+{
+"classname" "item_healthkit"
+"angles" "0 79 0"
+"spawnflags" "0"
+"movetype" "8"
+"origin" "-539 -1194 -2112"
+}
+{
+"classname" "monster_miniturret"
+"angles" "0 180 0"
+"attackrange" "1200"
+"turnrate" "30"
+"maxsleep" "15"
+"orientation" "0"
+"health" "300"
+"spawnflags" "32"
+"origin" "-920 -1344 -2111"
+}
+{
+"classname" "monster_miniturret"
+"angles" "0 180 0"
+"attackrange" "1200"
+"turnrate" "30"
+"maxsleep" "15"
+"orientation" "0"
+"health" "300"
+"spawnflags" "32"
+"origin" "-920 -1204 -2111"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"angles" "0 138 0"
+"health" "150"
+"classify" "4"
+"movetype" "8"
+"origin" "-1163 -1341 -2112"
+}
+{
+"classname" "monster_sentry"
+"spawnflags" "32"
+"angles" "0 228 0"
+"health" "150"
+"classify" "4"
+"movetype" "8"
+"origin" "-1163 -1211 -2112"
+}
+{
+"classname" "item_generic"
+"model" "models/snd/ammobox.mdl"
+"angles" "0 140 0"
+"spawnflags" "128"
+"origin" "-3008.99 -132.196 64"
+}
+{
+"classname" "weaponbox"
+"spawnflags" "0"
+"bullet9mm" "200"
+"buckshot" "48"
+"m_flCustomRespawnTime" "1"
+"model" "models/scmod/null.mdl"
+"movetype" "8"
+"soundlist" "../wayne/norespawnsound.txt"
+"origin" "-3008.99 -132.196 64"
+}
+{
+"classname" "item_generic"
+"model" "models/snd/ammobox.mdl"
+"angles" "0 0 0"
+"spawnflags" "128"
+"origin" "598 -292 16"
+}
+{
+"classname" "weaponbox"
+"angles" "0 180 0"
+"spawnflags" "0"
+"bullet9mm" "200"
+"buckshot" "48"
+"m_flCustomRespawnTime" "1"
+"model" "models/scmod/null.mdl"
+"movetype" "8"
+"soundlist" "../wayne/norespawnsound.txt"
+"origin" "596 -292 22"
+}
+{
+"classname" "trigger_relay"
+"spawnflags" "1"
+"triggerstate" "1"
+"targetname" "w.morenpcs1.r"
+"target" "w.morenpcs1.mm"
+"origin" "-808 8 200"
+}
+{
+"classname" "multi_manager"
+"targetname" "w.morenpcs1.mm"
+"w.morenpcs1" ".001"
+"w.run.bgm" ".001#1"
+"origin" "-808 24 200"
+}
+{
+"classname" "ambient_music"
+"angles" "0 255 0"
+"spawnflags" "1"
+"volume" "5"
+"message" "../media/opfor/OpposingForce13.mp3"
+"targetname" "w.run.bgm"
+"origin" "-808 -8 200"
+}
+{
+"classname" "ambient_music"
+"angles" "0 255 0"
+"spawnflags" "1"
+"volume" "5"
+"message" "../media/opfor/OpposingForce17.mp3"
+"targetname" "w.maze.bgm"
+"origin" "1088 -152 312"
+}
+{
+"classname" "multi_manager"
+"targetname" "w.horde1.mm"
+"w.babyarrows2" "100#1"
+"w.horde1.block" "90"
+"w.1hrd4" "7"
+"w.1hrd3" "5"
+"w.1hrd2" "1.5"
+"w.1hrd1" ".5"
+"w.babyarrows1" ".001#1"
+"spawn2" ".001#1"
+"spawn1" ".001#0"
+"w.maze.bgm" ".001#1"
+"w.run.bgm" ".001#0"
+"origin" "1104 -152 312"
+}
+{
+"classname" "multi_manager"
+"targetname" "w.horde2.mm"
+"w.2hrd3" "10"
+"w.2hrd2" "5"
+"w.2hrd1" ".5"
+"w.babyarrows3" ".001#1"
+"w.name.bgm" ".001#0"
+"w.storm.bgm" ".001#1"
+"origin" "1388 224 -1060"
+}
+{
+"classname" "ambient_music"
+"angles" "0 255 0"
+"spawnflags" "1"
+"volume" "5"
+"message" "../media/opfor/OpposingForce03.mp3"
+"targetname" "w.name.bgm"
+"origin" "1356 280 -1048"
+}
+{
+"classname" "ambient_music"
+"angles" "0 255 0"
+"spawnflags" "1"
+"volume" "5"
+"message" "../media/opfor/OpposingForce06.mp3"
+"targetname" "w.storm.bgm"
+"origin" "1352 304 -1052"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 92 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "-256 -1264 -2104"
+}
+{
+"classname" "monster_male_assassin"
+"spawnflags" "4"
+"rendercolor" "0 0 0"
+"angles" "0 92 0"
+"minhullsize" "0 0 0"
+"maxhullsize" "0 0 0"
+"weapons" "8"
+"health" "250"
+"classify" "4"
+"origin" "-520 -1244 -2100"
+}
+{
+"classname" "multi_manager"
+"targetname" "w.morenpcs4.mm"
+"w.babyarrows3" ".001#0"
+"w.camera2" ".001"
+"w.morenpcs4" ".001"
+"w.chamber.bgm" "15#1"
+"w.storm.bgm" "15#0"
+"origin" "168 1640 -1044"
+}
+{
+"classname" "ambient_music"
+"angles" "0 255 0"
+"spawnflags" "1"
+"volume" "5"
+"message" "../media/opfor/OpposingForce16.mp3"
+"targetname" "w.chamber.bgm"
+"origin" "184 1640 -1044"
+}
+{
+"classname" "env_sprite"
+"angles" "345 0 0"
+"model" "sprites/tc/warn.spr"
+"vp_type" "4"
+"scale" ".15"
+"framerate" "10.0"
+"rendermode" "4"
+"spawnflags" "1"
+"renderamt" "255"
+"origin" "-4 224 -924"
+}
+{
+"classname" "env_sprite"
+"angles" "345 180 0"
+"model" "sprites/tc/warn.spr"
+"vp_type" "4"
+"scale" ".15"
+"framerate" "10.0"
+"rendermode" "4"
+"spawnflags" "1"
+"renderamt" "255"
+"origin" "132 224 -924"
+}
+{
+"classname" "env_sprite"
+"angles" "345 270 0"
+"model" "sprites/tc/warn.spr"
+"vp_type" "4"
+"scale" ".15"
+"framerate" "10.0"
+"rendermode" "4"
+"spawnflags" "1"
+"renderamt" "255"
+"origin" "-3192 -224 204"
+}
+{
+"classname" "env_sprite"
+"angles" "0 180 0"
+"model" "sprites/tc/warn.spr"
+"vp_type" "4"
+"scale" ".15"
+"framerate" "10.0"
+"rendermode" "4"
+"spawnflags" "1"
+"renderamt" "255"
+"origin" "305 -624 93"
 }
  
