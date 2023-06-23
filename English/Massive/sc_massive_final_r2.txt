@@ -4981,7 +4981,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "4"
 "targetname" "top_o_stair_ran1"
-"displayname" "Slightly Weaker Scorpio"
+"displayname" "Slightly Weaker Scorpion"
 "xenmaker" "w.xenfx"
 "bloodcolor" "-1"
 "origin" "792 -1544 -1104"
@@ -5189,7 +5189,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "32"
 "targetname" "roof_mon_ran_rep1"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "1944 -2160 -1600"
 }
 {
@@ -5251,7 +5251,7 @@
 "xenmaker" "w.xenfx"
 "targetname" "w.a1.headcrab"
 "classify" "7"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-2495 -1 -3704"
 }
@@ -5267,7 +5267,7 @@
 "xenmaker" "w.xenfx"
 "targetname" "w.a1.headcrab"
 "classify" "7"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-2656 -128 -3704"
 }
@@ -5283,7 +5283,7 @@
 "xenmaker" "w.xenfx"
 "targetname" "w.a1.headcrab"
 "classify" "7"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-2561 -191 -3704"
 }
@@ -5299,7 +5299,7 @@
 "xenmaker" "w.xenfx"
 "targetname" "w.a1.headcrab"
 "classify" "7"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-2588 -0.999992 -3704"
 }
@@ -5761,7 +5761,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-320 2896 -1840"
 }
@@ -5775,7 +5775,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-320 3152 -1840"
 }
@@ -5789,7 +5789,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-320 3024 -1840"
 }
@@ -5803,7 +5803,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-256 2960 -1840"
 }
@@ -5817,7 +5817,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-256 3088 -1840"
 }
@@ -5831,7 +5831,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-256 3216 -1840"
 }
@@ -5845,7 +5845,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-320 3264 -1840"
 }
@@ -5859,7 +5859,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a9.monsters"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-256 3328 -1840"
 }
@@ -7527,7 +7527,7 @@
 "targetname" "w.a3.monsters"
 "monstertype" "monster_headcrab"
 "xenmaker" "w.xenfx"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-409 3841 -3183"
 }
@@ -7542,7 +7542,7 @@
 "targetname" "w.a3.monsters"
 "monstertype" "monster_headcrab"
 "xenmaker" "w.xenfx"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-490 3742 -3183"
 }
@@ -7557,7 +7557,7 @@
 "targetname" "w.a3.monsters"
 "monstertype" "monster_headcrab"
 "xenmaker" "w.xenfx"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "bloodcolor" "-1"
 "origin" "-619 3846 -3183"
 }
@@ -8678,7 +8678,7 @@
 "m_vLightColor" "150 0 230"
 "m_vBeamColor" "150 0 230"
 "spawnflags" "3"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "-2580 1130 -3647"
 }
 {
@@ -9010,7 +9010,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a10.monsters"
 "health" "50"
-"displayname" "Slightly Weaker Scorpio"
+"displayname" "Slightly Weaker Scorpion"
 "bloodcolor" "-1"
 "xenmaker" "w.xenfx"
 "classify" "7"
@@ -9027,7 +9027,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a10.monsters"
 "health" "50"
-"displayname" "Slightly Weaker Scorpio"
+"displayname" "Slightly Weaker Scorpion"
 "bloodcolor" "-1"
 "xenmaker" "w.xenfx"
 "classify" "7"
@@ -9044,7 +9044,7 @@
 "monstertype" "monster_headcrab"
 "targetname" "w.a10.monsters"
 "health" "50"
-"displayname" "Slightly Weaker Scorpio"
+"displayname" "Slightly Weaker Scorpion"
 "bloodcolor" "-1"
 "xenmaker" "w.xenfx"
 "classify" "7"
@@ -9546,7 +9546,7 @@
 "targetname" "w.egon.monsters"
 "monstertype" "monster_headcrab"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "classify" "7"
 "bloodcolor" "-1"
 "origin" "-1152 1312 -1848"
@@ -9562,7 +9562,7 @@
 "targetname" "w.egon.monsters"
 "monstertype" "monster_headcrab"
 "health" "100"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "classify" "7"
 "bloodcolor" "-1"
 "origin" "-1152 1248 -1848"
@@ -9667,7 +9667,7 @@
 "m_vLightColor" "150 0 230"
 "m_vBeamColor" "150 0 230"
 "spawnflags" "3"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "-1152 1248 -1839"
 }
 {
@@ -9680,7 +9680,7 @@
 "m_vLightColor" "150 0 230"
 "m_vBeamColor" "150 0 230"
 "spawnflags" "3"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "-1152 1312 -1839"
 }
 {
@@ -9693,7 +9693,7 @@
 "m_vLightColor" "150 0 230"
 "m_vBeamColor" "150 0 230"
 "spawnflags" "3"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "-1008 1312 -1831"
 }
 {
@@ -9706,7 +9706,7 @@
 "m_vLightColor" "150 0 230"
 "m_vBeamColor" "150 0 230"
 "spawnflags" "3"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "-1008 1256 -1831"
 }
 {
@@ -10942,7 +10942,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "4"
 "targetname" "top_o_stair_ran1"
-"displayname" "Slightly Weaker Scorpio"
+"displayname" "Slightly Weaker Scorpion"
 "xenmaker" "w.xenfx"
 "bloodcolor" "-1"
 "origin" "888 -1544 -1104"
@@ -12409,7 +12409,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "32"
 "targetname" "roof_mon_ran_rep1"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "1944 -1712 -1600"
 }
 {
@@ -12553,7 +12553,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "32"
 "targetname" "w.finale.headcrab"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "1944 -2160 -1528"
 }
 {
@@ -12568,7 +12568,7 @@
 "monstertype" "monster_headcrab"
 "spawnflags" "32"
 "targetname" "w.finale.headcrab"
-"displayname" "Perilously Fast Scorpio"
+"displayname" "Perilously Fast Scorpion"
 "origin" "1944 -1712 -1528"
 }
 {
